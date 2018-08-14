@@ -1,0 +1,55 @@
+Next: Input, Up: stty invocation   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+19.2.1 Control settings
+
+Control settings:
+
+‘parenb’
+   
+    Generate parity bit in output and expect parity bit in input. May be
+    negated.
+
+‘parodd’
+   
+    Set odd parity (even if negated). May be negated.
+
+‘cmspar’
+   
+    Use "stick" (mark/space) parity. If parodd is set, the parity bit is always
+    1; if parodd is not set, the parity bit is always zero. Non-POSIX. May be
+    negated.
+
+‘cs5’
+‘cs6’
+‘cs7’
+‘cs8’
+   
+    Set character size to 5, 6, 7, or 8 bits.
+
+‘hup’
+‘hupcl’
+   
+    Send a hangup signal when the last process closes the tty. May be negated.
+
+‘cstopb’
+   
+    Use two stop bits per character (one if negated). May be negated.
+
+‘cread’
+   
+    Allow input to be received. May be negated.
+
+‘clocal’
+   
+    Disable modem control signals. May be negated.
+
+‘crtscts’
+   
+    Enable RTS/CTS flow control. Non-POSIX. May be negated.
+
+‘cdtrdsr’
+   
+    Enable DTR/DSR flow control. Non-POSIX. May be negated.
+

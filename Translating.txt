@@ -1,0 +1,57 @@
+Next: Squeezing and deleting, Previous: Character sets, Up: tr invocation   [
+Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+9.1.2 Translating
+
+tr performs translation when set1 and set2 are both given and the --delete (-d)
+option is not given. tr translates each character of its input that is in set1
+to the corresponding character in set2. Characters not in set1 are passed
+through unchanged. When a character appears more than once in set1 and the
+corresponding characters in set2 are not all the same, only the final one is
+used. For example, these two commands are equivalent:
+
+tr aaa xyz
+tr a z
+
+A common use of tr is to convert lowercase characters to uppercase. This can be
+done in many ways. Here are three of them:
+
+tr abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ
+tr a-z A-Z
+tr '[:lower:]' '[:upper:]'
+
+But note that using ranges like a-z above is not portable.
+
+When tr is performing translation, set1 and set2 typically have the same
+length. If set1 is shorter than set2, the extra characters at the end of set2
+are ignored.
+
+On the other hand, making set1 longer than set2 is not portable; POSIX says
+that the result is undefined. In this situation, BSD tr pads set2 to the length
+of set1 by repeating the last character of set2 as many times as necessary.
+System V tr truncates set1 to the length of set2.
+
+By default, GNU tr handles this case like BSD tr. When the --truncate-set1 (-t)
+option is given, GNU tr handles this case like the System V tr instead. This
+option is ignored for operations other than translation.
+
+Acting like System V tr in this case breaks the relatively common BSD idiom:
+
+tr -cs A-Za-z0-9 '\012'
+
+because it converts only zero bytes (the first element in the complement of
+set1), rather than all non-alphanumerics, to newlines.
+
+By the way, the above idiom is not portable because it uses ranges, and it
+assumes that the octal code for newline is 012. Assuming a POSIX compliant tr,
+here is a better way to write it:
+
+tr -cs '[:alnum:]' '[\n*]'
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Next: Squeezing and deleting, Previous: Character sets, Up: tr invocation   [
+Contents][Index]
+

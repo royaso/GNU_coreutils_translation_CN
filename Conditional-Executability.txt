@@ -1,0 +1,18 @@
+Next: Multiple Changes, Previous: Changing Special Mode Bits, Up: Symbolic
+Modes   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+27.2.4 Conditional Executability
+
+There is one more special type of symbolic permission: if you use ‘X’ instead
+of ‘x’, execute/search permission is affected only if the file is a directory
+or already had execute permission.
+
+For example, this mode:
+
+a+X
+
+gives all users permission to search directories, or to execute files if anyone
+could execute them before.
+

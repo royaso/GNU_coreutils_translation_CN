@@ -1,0 +1,117 @@
+Next: Output formatting in ptx, Previous: Charset selection in ptx, Up: ptx
+invocation   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+7.5.3 Word selection and input processing
+
+‘-b file’
+‘--break-file=file’
+   
+    This option provides an alternative (to -W) method of describing which
+    characters make up words. It introduces the name of a file which contains a
+    list of characters which cannot be part of one word; this file is called
+    the Break file. Any character which is not part of the Break file is a word
+    constituent. If both options -b and -W are specified, then -W has
+    precedence and -b is ignored.
+
+    When GNU extensions are enabled, the only way to avoid newline as a break
+    character is to write all the break characters in the file with no newline
+    at all, not even at the end of the file. When GNU extensions are disabled,
+    spaces, tabs and newlines are always considered as break characters even if
+    not included in the Break file.
+
+‘-i file’
+‘--ignore-file=file’
+   
+    The file associated with this option contains a list of words which will
+    never be taken as keywords in concordance output. It is called the Ignore
+    file. The file contains exactly one word in each line; the end of line
+    separation of words is not subject to the value of the -S option.
+
+‘-o file’
+‘--only-file=file’
+   
+    The file associated with this option contains a list of words which will be
+    retained in concordance output; any word not mentioned in this file is
+    ignored. The file is called the Only file. The file contains exactly one
+    word in each line; the end of line separation of words is not subject to
+    the value of the -S option.
+
+    There is no default for the Only file. When both an Only file and an Ignore
+    file are specified, a word is considered a keyword only if it is listed in
+    the Only file and not in the Ignore file.
+
+‘-r’
+‘--references’
+   
+    On each input line, the leading sequence of non-white space characters will
+    be taken to be a reference that has the purpose of identifying this input
+    line in the resulting permuted index. See Output formatting in ptx, for
+    more information about reference production. Using this option changes the
+    default value for option -S.
+
+    Using this option, the program does not try very hard to remove references
+    from contexts in output, but it succeeds in doing so when the context ends
+    exactly at the newline. If option -r is used with -S default value, or when
+    GNU extensions are disabled, this condition is always met and references
+    are completely excluded from the output contexts.
+
+‘-S regexp’
+‘--sentence-regexp=regexp’
+   
+    This option selects which regular expression will describe the end of a
+    line or the end of a sentence. In fact, this regular expression is not the
+    only distinction between end of lines or end of sentences, and input line
+    boundaries have no special significance outside this option. By default,
+    when GNU extensions are enabled and if -r option is not used, end of
+    sentences are used. In this case, this regex is imported from GNU Emacs:
+
+    [.?!][]\"')}]*\\($\\|\t\\|  \\)[ \t\n]*
+
+    Whenever GNU extensions are disabled or if -r option is used, end of lines
+    are used; in this case, the default regexp is just:
+
+    \n
+
+    Using an empty regexp is equivalent to completely disabling end of line or
+    end of sentence recognition. In this case, the whole file is considered to
+    be a single big line or sentence. The user might want to disallow all
+    truncation flag generation as well, through option -F "". See Syntax of
+    Regular Expressions in The GNU Emacs Manual.
+
+    When the keywords happen to be near the beginning of the input line or
+    sentence, this often creates an unused area at the beginning of the output
+    context line; when the keywords happen to be near the end of the input line
+    or sentence, this often creates an unused area at the end of the output
+    context line. The program tries to fill those unused areas by wrapping
+    around context in them; the tail of the input line or sentence is used to
+    fill the unused area on the left of the output line; the head of the input
+    line or sentence is used to fill the unused area on the right of the output
+    line.
+
+    As a matter of convenience to the user, many usual backslashed escape
+    sequences from the C language are recognized and converted to the
+    corresponding characters by ptx itself.
+
+‘-W regexp’
+‘--word-regexp=regexp’
+   
+    This option selects which regular expression will describe each keyword. By
+    default, if GNU extensions are enabled, a word is a sequence of letters;
+    the regexp used is ‘\w+’. When GNU extensions are disabled, a word is by
+    default anything which ends with a space, a tab or a newline; the regexp
+    used is ‘[^ \t\n]+’.
+
+    An empty regexp is equivalent to not using this option. See Syntax of
+    Regular Expressions in The GNU Emacs Manual.
+
+    As a matter of convenience to the user, many usual backslashed escape
+    sequences, as found in the C language, are recognized and converted to the
+    corresponding characters by ptx itself.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Next: Output formatting in ptx, Previous: Charset selection in ptx, Up: ptx
+invocation   [Contents][Index]
+

@@ -1,0 +1,42 @@
+Next: File characteristic tests, Previous: File type tests, Up: test invocation
+  [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+16.3.2 Access permission tests
+
+These options test for particular access permissions.
+
+‘-g file’
+   
+    True if file exists and has its set-group-ID bit set.
+
+‘-k file’
+   
+    True if file exists and has its sticky bit set.
+
+‘-r file’
+   
+    True if file exists and read permission is granted.
+
+‘-u file’
+   
+    True if file exists and has its set-user-ID bit set.
+
+‘-w file’
+   
+    True if file exists and write permission is granted.
+
+‘-x file’
+   
+    True if file exists and execute permission is granted (or search
+    permission, if it is a directory).
+
+‘-O file’
+   
+    True if file exists and is owned by the current effective user ID.
+
+‘-G file’
+   
+    True if file exists and is owned by the current effective group ID.
+

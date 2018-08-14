@@ -1,0 +1,4 @@
+Refresh (0 sec) Examples-of-date.html#g_t_0025s_002dexamples
+
+The node you are looking for is at %s-examples.
+

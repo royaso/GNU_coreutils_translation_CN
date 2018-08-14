@@ -1,0 +1,128 @@
+Next: Sorting files for join, Up: join invocation   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+8.3.1 General options
+
+The program accepts the following options. Also see Common options.
+
+‘-a file-number’
+   
+    Print a line for each unpairable line in file file-number (either ‘1’ or
+    ‘2’), in addition to the normal output.
+
+‘--check-order’
+
+    Fail with an error message if either input file is wrongly ordered.
+
+‘--nocheck-order’
+
+    Do not check that both input files are in sorted order. This is the
+    default.
+
+‘-e string’
+   
+    Replace those output fields that are missing in the input with string.
+    I.e., missing fields specified with the -12jo options.
+
+‘--header’
+   
+    Treat the first line of each input file as a header line. The header lines
+    will be joined and printed as the first output line. If -o is used to
+    specify output format, the header line will be printed according to the
+    specified format. The header lines will not be checked for ordering even if
+    --check-order is specified. Also if the header lines from each file do not
+    match, the heading fields from the first file will be used.
+
+‘-i’
+‘--ignore-case’
+   
+    Ignore differences in case when comparing keys. With this option, the lines
+    of the input files must be ordered in the same way. Use ‘sort -f’ to
+    produce this ordering.
+
+‘-1 field’
+   
+    Join on field field (a positive integer) of file 1.
+
+‘-2 field’
+   
+    Join on field field (a positive integer) of file 2.
+
+‘-j field’
+
+    Equivalent to -1 field -2 field.
+
+‘-o field-list’
+‘-o auto’
+
+    If the keyword ‘auto’ is specified, infer the output format from the first
+    line in each file. This is the same as the default output format but also
+    ensures the same number of fields are output for each line. Missing fields
+    are replaced with the -e option and extra fields are discarded.
+
+    Otherwise, construct each output line according to the format in
+    field-list. Each element in field-list is either the single character ‘0’
+    or has the form m.n where the file number, m, is ‘1’ or ‘2’ and n is a
+    positive field number.
+
+    A field specification of ‘0’ denotes the join field. In most cases, the
+    functionality of the ‘0’ field spec may be reproduced using the explicit
+    m.n that corresponds to the join field. However, when printing unpairable
+    lines (using either of the -a or -v options), there is no way to specify
+    the join field using m.n in field-list if there are unpairable lines in
+    both files. To give join that functionality, POSIX invented the ‘0’ field
+    specification notation.
+
+    The elements in field-list are separated by commas or blanks. Blank
+    separators typically need to be quoted for the shell. For example, the
+    commands ‘join -o 1.2,2.2’ and ‘join -o '1.2 2.2'’ are equivalent.
+
+    All output lines—including those printed because of any -a or -v option—are
+    subject to the specified field-list.
+
+‘-t char’
+
+    Use character char as the input and output field separator. Treat as
+    significant each occurrence of char in the input file. Use ‘sort -t char’,
+    without the -b option of ‘sort’, to produce this ordering. If ‘join -t ''’
+    is specified, the whole line is considered, matching the default operation
+    of sort. If ‘-t '\0'’ is specified then the ASCII NUL character is used to
+    delimit the fields.
+
+‘-v file-number’
+
+    Print a line for each unpairable line in file file-number (either ‘1’ or
+    ‘2’), instead of the normal output.
+
+‘-z’
+‘--zero-terminated’
+   
+    Delimit items with a zero byte rather than a newline (ASCII LF). I.e.,
+    treat input as items separated by ASCII NUL and terminate output items with
+    ASCII NUL. This option can be useful in conjunction with ‘perl -0’ or ‘find
+    -print0’ and ‘xargs -0’ which do the same in order to reliably handle
+    arbitrary file names (even those containing blanks or other special
+    characters). Note with -z the newline character is treated as a field
+    separator.
+
+An exit status of zero indicates success, and a nonzero value indicates
+failure.
+
+If the --check-order option is given, unsorted inputs will cause a fatal error
+message. If the option --nocheck-order is given, unsorted inputs will never
+cause an error message. If neither of these options is given, wrongly sorted
+inputs are diagnosed only if an input file is found to contain unpairable
+lines, and when both input files are non empty. If an input file is diagnosed
+as being unsorted, the join command will exit with a nonzero status (and the
+output should not be used).
+
+Forcing join to process wrongly sorted input files containing unpairable lines
+by specifying --nocheck-order is not guaranteed to produce any particular
+output. The output will probably not correspond with whatever you hoped it
+would be.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Next: Sorting files for join, Up: join invocation   [Contents][Index]
+

@@ -1,0 +1,95 @@
+Next: Characters, Previous: Local, Up: stty invocation   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+19.2.5 Combination settings
+
+Combination settings:
+
+‘evenp’
+‘parity’
+   
+    Same as parenb -parodd cs7. May be negated. If negated, same as -parenb
+    cs8.
+
+‘oddp’
+   
+    Same as parenb parodd cs7. May be negated. If negated, same as -parenb cs8.
+
+‘nl’
+   
+    Same as -icrnl -onlcr. May be negated. If negated, same as icrnl -inlcr
+    -igncr onlcr -ocrnl -onlret.
+
+‘ek’
+   
+    Reset the erase and kill special characters to their default values.
+
+‘sane’
+   
+    Same as:
+
+    cread -ignbrk brkint -inlcr -igncr icrnl
+    icanon iexten echo echoe echok -echonl -noflsh
+    -ixoff -iutf8 -iuclc -ixany imaxbel -xcase -olcuc -ocrnl
+    opost -ofill onlcr -onocr -onlret nl0 cr0 tab0 bs0 vt0 ff0
+    isig -tostop -ofdel -echoprt echoctl echoke -extproc
+
+    and also sets all special characters to their default values.
+
+‘cooked’
+   
+    Same as brkint ignpar istrip icrnl ixon opost isig icanon, plus sets the
+    eof and eol characters to their default values if they are the same as the
+    min and time characters. May be negated. If negated, same as raw.
+
+‘raw’
+   
+    Same as:
+
+    -ignbrk -brkint -ignpar -parmrk -inpck -istrip
+    -inlcr -igncr -icrnl -ixon -ixoff -icanon -opost
+    -isig -iuclc -ixany -imaxbel -xcase min 1 time 0
+
+    May be negated. If negated, same as cooked.
+
+‘cbreak’
+   
+    Same as -icanon. May be negated. If negated, same as icanon.
+
+‘pass8’
+   
+    Same as -parenb -istrip cs8. May be negated. If negated, same as parenb
+    istrip cs7.
+
+‘litout’
+   
+    Same as -parenb -istrip -opost cs8. May be negated. If negated, same as
+    parenb istrip opost cs7.
+
+‘decctlq’
+   
+    Same as -ixany. Non-POSIX. May be negated.
+
+‘tabs’
+   
+    Same as tab0. Non-POSIX. May be negated. If negated, same as tab3.
+
+‘lcase’
+‘LCASE’
+   
+    Same as xcase iuclc olcuc. Non-POSIX. May be negated. (Used for terminals
+    with uppercase characters only.)
+
+‘crt’
+   
+    Same as echoe echoctl echoke.
+
+‘dec’
+   
+    Same as echoe echoctl echoke -ixany intr ^C erase ^? kill C-u.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Next: Characters, Previous: Local, Up: stty invocation   [Contents][Index]
+

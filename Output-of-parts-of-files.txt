@@ -1,0 +1,13 @@
+Next: Summarizing files, Previous: Formatting file contents, Up: Top   [
+Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5 Output of parts of files
+
+These commands output pieces of the input.
+
+• head invocation:      Output the first part of files.
+• tail invocation:      Output the last part of files.
+• split invocation:     Split a file into pieces.
+• csplit invocation:    Split a file into context-determined pieces.

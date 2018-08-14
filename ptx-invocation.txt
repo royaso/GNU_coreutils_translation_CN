@@ -1,0 +1,55 @@
+Next: tsort invocation, Previous: comm invocation, Up: Operating on sorted
+files   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+7.5 ptx: Produce permuted indexes
+
+ptx reads a text file and essentially produces a permuted index, with each
+keyword in its context. The calling sketch is either one of:
+
+ptx [option …] [file …]
+ptx -G [option …] [input [output]]
+
+The -G (or its equivalent: --traditional) option disables all GNU extensions
+and reverts to traditional mode, thus introducing some limitations and changing
+several of the program’s default option values. When -G is not specified, GNU
+extensions are always enabled. GNU extensions to ptx are documented wherever
+appropriate in this document. See Compatibility in ptx, for the full list.
+
+Individual options are explained in the following sections.
+
+When GNU extensions are enabled, there may be zero, one or several files after
+the options. If there is no file, the program reads the standard input. If
+there is one or several files, they give the name of input files which are all
+read in turn, as if all the input files were concatenated. However, there is a
+full contextual break between each file and, when automatic referencing is
+requested, file names and line numbers refer to individual text input files. In
+all cases, the program outputs the permuted index to the standard output.
+
+When GNU extensions are not enabled, that is, when the program operates in
+traditional mode, there may be zero, one or two parameters besides the options.
+If there are no parameters, the program reads the standard input and outputs
+the permuted index to the standard output. If there is only one parameter, it
+names the text input to be read instead of the standard input. If two
+parameters are given, they give respectively the name of the input file to read
+and the name of the output file to produce. Be very careful to note that, in
+this case, the contents of file given by the second parameter is destroyed.
+This behavior is dictated by System V ptx compatibility; GNU Standards normally
+discourage output parameters not introduced by an option.
+
+Note that for any file named as the value of an option or as an input text
+file, a single dash ‘-’ may be used, in which case standard input is assumed.
+However, it would not make sense to use this convention more than once per
+program invocation.
+
+• General options in ptx:      Options which affect general program behavior.
+• Charset selection in ptx:    Underlying character set considerations.
+• Input processing in ptx:     Input fields, contexts, and keyword selection.
+• Output formatting in ptx:    Types of output format, and sizing the fields.
+• Compatibility in ptx:       
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Next: tsort invocation, Previous: comm invocation, Up: Operating on sorted
+files   [Contents][Index]
+

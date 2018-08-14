@@ -1,0 +1,31 @@
+Previous: Relations for expr, Up: expr invocation   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+16.4.4 Examples of using expr
+
+Here are a few examples, including quoting for shell metacharacters.
+
+To add 1 to the shell variable foo, in Bourne-compatible shells:
+
+foo=$(expr $foo + 1)
+
+To print the non-directory part of the file name stored in $fname, which need
+not contain a /:
+
+expr $fname : '.*/\(.*\)' '|' $fname
+
+An example showing that \+ is an operator:
+
+expr aaa : 'a\+'
+⇒ 3
+
+expr abc : 'a\(.\)c'
+⇒ b
+expr index abcdef cz
+⇒ 3
+expr index index a
+error→ expr: syntax error
+expr index + index a
+⇒ 0
+

@@ -1,0 +1,14 @@
+Next: Basic operations, Previous: Operating on characters, Up: Top   [Contents]
+[Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+10 Directory listing
+
+This chapter describes the ls command and its variants dir and vdir, which list
+information about files.
+
+• ls invocation:           List directory contents.
+• dir invocation:          Briefly ls.
+• vdir invocation:         Verbosely ls.
+• dircolors invocation:    Color setup for ls, etc.

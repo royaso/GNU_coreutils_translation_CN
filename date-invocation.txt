@@ -1,0 +1,42 @@
+Next: arch invocation, Up: System context   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+21.1 date: Print or set system date and time
+
+Synopses:
+
+date [option]… [+format]
+date [-u|--utc|--universal] [ MMDDhhmm[[CC]YY][.ss] ]
+
+Invoking date with no format argument is equivalent to invoking it with a
+default format that depends on the LC_TIME locale category. In the default C
+locale, this format is ‘'+%a %b %e %H:%M:%S %Z %Y'’, so the output looks like
+‘Thu Mar  3 13:47:51 PST 2005’.
+
+Normally, date uses the time zone rules indicated by the TZ environment
+variable, or the system default rules if TZ is not set. See Specifying the Time
+Zone with TZ in The GNU C Library Reference Manual.
+
+If given an argument that starts with a ‘+’, date prints the current date and
+time (or the date and time specified by the --date option, see below) in the
+format defined by that argument, which is similar to that of the strftime
+function. Except for conversion specifiers, which start with ‘%’, characters in
+the format string are printed unchanged. The conversion specifiers are
+described below.
+
+An exit status of zero indicates success, and a nonzero value indicates
+failure.
+
+• Time conversion specifiers:       %[HIklMNpPrRsSTXzZ]
+• Date conversion specifiers:       %[aAbBcCdDeFgGhjmuUVwWxyY]
+• Literal conversion specifiers:    %[%nt]
+• Padding and other flags:          Pad with zeros, spaces, etc.
+• Setting the time:                 Changing the system clock.
+• Options for date:                 Instead of the current time.
+• Date input formats:               Specifying date strings.
+• Examples of date:                 Examples.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Next: arch invocation, Up: System context   [Contents][Index]
+

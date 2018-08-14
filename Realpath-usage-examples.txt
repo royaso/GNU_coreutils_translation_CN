@@ -1,0 +1,50 @@
+Up: realpath invocation   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+18.5.1 Realpath usage examples
+
+By default, realpath prints the absolute file name of given files (symlinks are
+resolved, words is resolved to american-english):
+
+cd /home/user
+realpath /usr/bin/sort /tmp/foo /usr/share/dict/words 1.txt
+⇒ /usr/bin/sort
+⇒ /tmp/foo
+⇒ /usr/share/dict/american-english
+⇒ /home/user/1.txt
+
+With --relative-to, file names are printed relative to the given directory:
+
+realpath --relative-to=/usr/bin \
+         /usr/bin/sort /tmp/foo /usr/share/dict/words 1.txt
+⇒ sort
+⇒ ../../tmp/foo
+⇒ ../share/dict/american-english
+⇒ ../../home/user/1.txt
+
+With --relative-base, relative file names are printed if the resolved file name
+is below the given base directory. For files outside the base directory
+absolute file names are printed:
+
+realpath --relative-base=/usr \
+         /usr/bin/sort /tmp/foo /usr/share/dict/words 1.txt
+⇒ bin/sort
+⇒ /tmp/foo
+⇒ share/dict/american-english
+⇒ /home/user/1.txt
+
+When both --relative-to=DIR1 and --relative-base=DIR2 are used, file names are
+printed relative to dir1 if they are located below dir2. If the files are not
+below dir2, they are printed as absolute file names:
+
+realpath --relative-to=/usr/bin --relative-base=/usr \
+         /usr/bin/sort /tmp/foo /usr/share/dict/words 1.txt
+⇒ sort
+⇒ /tmp/foo
+⇒ ../share/dict/american-english
+⇒ /home/user/1.txt
+
+When both --relative-to=DIR1 and --relative-base=DIR2 are used, dir1 must be a
+subdirectory of dir2. Otherwise, realpath prints absolutes file names.
+

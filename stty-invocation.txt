@@ -1,0 +1,75 @@
+Next: printenv invocation, Previous: pwd invocation, Up: Working context   [
+Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+19.2 stty: Print or change terminal characteristics
+
+stty prints or changes terminal characteristics, such as baud rate. Synopses:
+
+stty [option] [setting]…
+stty [option]
+
+If given no line settings, stty prints the baud rate, line discipline number
+(on systems that support it), and line settings that have been changed from the
+values set by ‘stty sane’. By default, mode reading and setting are performed
+on the tty line connected to standard input, although this can be modified by
+the --file option.
+
+stty accepts many non-option arguments that change aspects of the terminal line
+operation, as described below.
+
+The program accepts the following options. Also see Common options.
+
+‘-a’
+‘--all’
+   
+    Print all current settings in human-readable form. This option may not be
+    used in combination with any line settings.
+
+‘-F device’
+‘--file=device’
+   
+    Set the line opened by the file name specified in device instead of the tty
+    line connected to standard input. This option is necessary because opening
+    a POSIX tty requires use of the O_NONDELAY flag to prevent a POSIX tty from
+    blocking until the carrier detect line is high if the clocal flag is not
+    set. Hence, it is not always possible to allow the shell to open the device
+    in the traditional manner.
+
+‘-g’
+‘--save’
+   
+    Print all current settings in a form that can be used as an argument to
+    another stty command to restore the current settings. This option may not
+    be used in combination with any line settings.
+
+Many settings can be turned off by preceding them with a ‘-’. Such arguments
+are marked below with “May be negated” in their description. The descriptions
+themselves refer to the positive case, that is, when not negated (unless stated
+otherwise, of course).
+
+Some settings are not available on all POSIX systems, since they use
+extensions. Such arguments are marked below with “Non-POSIX” in their
+description. On non-POSIX systems, those or other settings also may not be
+available, but it’s not feasible to document all the variations: just try it
+and see.
+
+stty is installed only on platforms with the POSIX terminal interface, so
+portable scripts should not rely on its existence on non-POSIX platforms.
+
+An exit status of zero indicates success, and a nonzero value indicates
+failure.
+
+• Control:        Control settings
+• Input:          Input settings
+• Output:         Output settings
+• Local:          Local settings
+• Combination:    Combination settings
+• Characters:     Special characters
+• Special:        Special settings
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Next: printenv invocation, Previous: pwd invocation, Up: Working context   [
+Contents][Index]
+

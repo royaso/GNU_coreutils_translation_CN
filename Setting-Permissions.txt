@@ -1,0 +1,99 @@
+Next: Copying Permissions, Up: Symbolic Modes   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+27.2.1 Setting Permissions
+
+The basic symbolic operations on a file’s permissions are adding, removing, and
+setting the permission that certain users have to read, write, and execute or
+search the file. These operations have the following format:
+
+users operation permissions
+
+The spaces between the three parts above are shown for readability only;
+symbolic modes cannot contain spaces.
+
+The users part tells which users’ access to the file is changed. It consists of
+one or more of the following letters (or it can be empty; see Umask and
+Protection, for a description of what happens then). When more than one of
+these letters is given, the order that they are in does not matter.
+
+u  
+
+    the user who owns the file;
+
+g  
+
+    other users who are in the file’s group;
+
+o  
+
+    all other users;
+
+a 
+
+    all users; the same as ‘ugo’.
+
+The operation part tells how to change the affected users’ access to the file,
+and is one of the following symbols:
+
++  
+
+    to add the permissions to whatever permissions the users already have for
+    the file;
+
+-  
+
+    to remove the permissions from whatever permissions the users already have
+    for the file;
+
+=  
+
+    to make the permissions the only permissions that the users have for the
+    file.
+
+The permissions part tells what kind of access to the file should be changed;
+it is normally zero or more of the following letters. As with the users part,
+the order does not matter when more than one letter is given. Omitting the
+permissions part is useful only with the ‘=’ operation, where it gives the
+specified users no access at all to the file.
+
+r  
+
+    the permission the users have to read the file;
+
+w  
+
+    the permission the users have to write to the file;
+
+x  
+
+    the permission the users have to execute the file, or search it if it is a
+    directory.
+
+For example, to give everyone permission to read and write a regular file, but
+not to execute it, use:
+
+a=rw
+
+To remove write permission for all users other than the file’s owner, use:
+
+go-w
+
+The above command does not affect the access that the owner of the file has to
+it, nor does it affect whether other users can read or execute the file.
+
+To give everyone except a file’s owner no permission to do anything with that
+file, use the mode below. Other users could still remove the file, if they have
+write permission on the directory it is in.
+
+go=
+
+Another way to specify the same thing is:
+
+og-rwx
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Next: Copying Permissions, Up: Symbolic Modes   [Contents][Index]
+

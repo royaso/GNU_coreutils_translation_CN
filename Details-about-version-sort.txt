@@ -1,0 +1,44 @@
+Next: General output formatting, Previous: Sorting the output, Up: ls
+invocation   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+10.1.4 Details about version sort
+
+Version sorting handles the fact that file names frequently include indices or
+version numbers. Standard sorting usually does not produce the order that one
+expects because comparisons are made on a character-by-character basis. Version
+sorting is especially useful when browsing directories that contain many files
+with indices/version numbers in their names:
+
+$ ls -1            $ ls -1v
+abc.zml-1.gz       abc.zml-1.gz
+abc.zml-12.gz      abc.zml-2.gz
+abc.zml-2.gz       abc.zml-12.gz
+
+Version-sorted strings are compared such that if ver1 and ver2 are version
+numbers and prefix and suffix (suffix matching the regular expression ‘(\.
+[A-Za-z~][A-Za-z0-9~]*)*’) are strings then ver1 < ver2 implies that the name
+composed of “prefix ver1 suffix” sorts before “prefix ver2 suffix”.
+
+Note also that leading zeros of numeric parts are ignored:
+
+$ ls -1            $ ls -1v
+abc-1.007.tgz      abc-1.01a.tgz
+abc-1.012b.tgz     abc-1.007.tgz
+abc-1.01a.tgz      abc-1.012b.tgz
+
+This functionality is implemented using gnulib’s filevercmp function, which has
+some caveats worth noting.
+
+  • LC_COLLATE is ignored, which means ‘ls -v’ and ‘sort -V’ will sort
+    non-numeric prefixes as if the LC_COLLATE locale category was set to ‘C’.
+  • Some suffixes will not be matched by the regular expression mentioned
+    above. Consequently these examples may not sort as you expect:
+
+    abc-1.2.3.4.7z
+    abc-1.2.3.7z
+
+    abc-1.2.3.4.x86_64.rpm
+    abc-1.2.3.x86_64.rpm
+

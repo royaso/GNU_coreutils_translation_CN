@@ -1,0 +1,66 @@
+Previous: sync invocation, Up: Disk usage   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+14.5 truncate: Shrink or extend the size of a file
+
+truncate shrinks or extends the size of each file to the specified size.
+Synopsis:
+
+truncate option… file…
+
+Any file that does not exist is created.
+
+If a file is larger than the specified size, the extra data is lost. If a file
+is shorter, it is extended and the extended part (or hole) reads as zero bytes.
+
+The program accepts the following options. Also see Common options.
+
+‘-c’
+‘--no-create’
+   
+    Do not create files that do not exist.
+
+‘-o’
+‘--io-blocks’
+   
+    Treat size as number of I/O blocks of the file rather than bytes.
+
+‘-r rfile’
+‘--reference=rfile’
+   
+    Base the size of each file on the size of rfile.
+
+‘-s size’
+‘--size=size’
+   
+    Set or adjust the size of each file according to size. size is in bytes
+    unless --io-blocks is specified. size may be, or may be an integer
+    optionally followed by, one of the following multiplicative suffixes:
+
+    ‘KB’ =>           1000 (KiloBytes)
+    ‘K’  =>           1024 (KibiBytes)
+    ‘MB’ =>      1000*1000 (MegaBytes)
+    ‘M’  =>      1024*1024 (MebiBytes)
+    ‘GB’ => 1000*1000*1000 (GigaBytes)
+    ‘G’  => 1024*1024*1024 (GibiBytes)
+
+    and so on for ‘T’, ‘P’, ‘E’, ‘Z’, and ‘Y’.
+
+    size may also be prefixed by one of the following to adjust the size of
+    each file based on its current size:
+
+    ‘+’  => extend by
+    ‘-’  => reduce by
+    ‘<’  => at most
+    ‘>’  => at least
+    ‘/’  => round down to multiple of
+    ‘%’  => round up to multiple of
+
+An exit status of zero indicates success, and a nonzero value indicates
+failure.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Previous: sync invocation, Up: Disk usage   [Contents][Index]
+

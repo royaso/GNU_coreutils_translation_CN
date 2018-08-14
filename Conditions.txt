@@ -1,0 +1,14 @@
+Next: Redirection, Previous: Printing text, Up: Top   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+16 Conditions
+
+This section describes commands that are primarily useful for their exit
+status, rather than their output. Thus, they are often used as the condition of
+shell if statements, or as the last command in a pipeline.
+
+• false invocation:    Do nothing, unsuccessfully.
+• true invocation:     Do nothing, successfully.
+• test invocation:     Check file types and compare values.
+• expr invocation:     Evaluate expressions.

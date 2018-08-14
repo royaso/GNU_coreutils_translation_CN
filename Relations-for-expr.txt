@@ -1,0 +1,32 @@
+Next: Examples of expr, Previous: Numeric expressions, Up: expr invocation   [
+Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+16.4.3 Relations for expr
+
+expr supports the usual logical connectives and relations. These have lower
+precedence than the string and numeric operators (previous sections). Here is
+the list, lowest-precedence operator first.
+
+‘|’
+
+    Returns its first argument if that is neither null nor zero, otherwise its
+    second argument if it is neither null nor zero, otherwise 0. It does not
+    evaluate its second argument if its first argument is neither null nor
+    zero.
+
+‘&’
+
+    Return its first argument if neither argument is null or zero, otherwise 0.
+    It does not evaluate its second argument if its first argument is null or
+    zero.
+
+‘< <= = == != >= >’
+   
+    Compare the arguments and return 1 if the relation is true, 0 otherwise. ==
+    is a synonym for =. expr first tries to convert both arguments to integers
+    and do a numeric comparison; if either conversion fails, it does a
+    lexicographic comparison using the character collating sequence specified
+    by the LC_COLLATE locale.
+

@@ -1,0 +1,22 @@
+Previous: Specifying time zone rules, Up: Date input formats   [Contents][Index
+]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+29.11 Authors of parse_datetime
+
+parse_datetime started life as getdate, as originally implemented by Steven M.
+Bellovin (smb@research.att.com) while at the University of North Carolina at
+Chapel Hill. The code was later tweaked by a couple of people on Usenet, then
+completely overhauled by Rich $alz (rsalz@bbn.com) and Jim Berets (
+jberets@bbn.com) in August, 1990. Various revisions for the GNU system were
+made by David MacKenzie, Jim Meyering, Paul Eggert and others, including
+renaming it to get_date to avoid a conflict with the alternative Posix function
+getdate, and a later rename to parse_datetime. The Posix function getdate can
+parse more locale-specific dates using strptime, but relies on an environment
+variable and external file, and lacks the thread-safety of parse_datetime.
+
+This chapter was originally produced by François Pinard (
+pinard@iro.umontreal.ca) from the parse_datetime.y source code, and then edited
+by K. Berry (kb@cs.umb.edu).
+

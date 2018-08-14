@@ -1,0 +1,140 @@
+Next: Compatibility in ptx, Previous: Input processing in ptx, Up: ptx
+invocation   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+7.5.4 Output formatting
+
+Output format is mainly controlled by the -O and -T options described in the
+table below. When neither -O nor -T are selected, and if GNU extensions are
+enabled, the program chooses an output format suitable for a dumb terminal.
+Each keyword occurrence is output to the center of one line, surrounded by its
+left and right contexts. Each field is properly justified, so the concordance
+output can be readily observed. As a special feature, if automatic references
+are selected by option -A and are output before the left context, that is, if
+option -R is not selected, then a colon is added after the reference; this
+nicely interfaces with GNU Emacs next-error processing. In this default output
+format, each white space character, like newline and tab, is merely changed to
+exactly one space, with no special attempt to compress consecutive spaces. This
+might change in the future. Except for those white space characters, every
+other character of the underlying set of 256 characters is transmitted
+verbatim.
+
+Output format is further controlled by the following options.
+
+‘-g number’
+‘--gap-size=number’
+   
+    Select the size of the minimum white space gap between the fields on the
+    output line.
+
+‘-w number’
+‘--width=number’
+   
+    Select the maximum output width of each final line. If references are used,
+    they are included or excluded from the maximum output width depending on
+    the value of option -R. If this option is not selected, that is, when
+    references are output before the left context, the maximum output width
+    takes into account the maximum length of all references. If this option is
+    selected, that is, when references are output after the right context, the
+    maximum output width does not take into account the space taken by
+    references, nor the gap that precedes them.
+
+‘-A’
+‘--auto-reference’
+   
+    Select automatic references. Each input line will have an automatic
+    reference made up of the file name and the line ordinal, with a single
+    colon between them. However, the file name will be empty when standard
+    input is being read. If both -A and -r are selected, then the input
+    reference is still read and skipped, but the automatic reference is used at
+    output time, overriding the input reference.
+
+‘-R’
+‘--right-side-refs’
+   
+    In the default output format, when option -R is not used, any references
+    produced by the effect of options -r or -A are placed to the far right of
+    output lines, after the right context. With default output format, when the
+    -R option is specified, references are rather placed at the beginning of
+    each output line, before the left context. For any other output format,
+    option -R is ignored, with one exception: with -R the width of references
+    is not taken into account in total output width given by -w.
+
+    This option is automatically selected whenever GNU extensions are disabled.
+
+‘-F string’
+‘--flag-truncation=string’
+   
+    This option will request that any truncation in the output be reported
+    using the string string. Most output fields theoretically extend towards
+    the beginning or the end of the current line, or current sentence, as
+    selected with option -S. But there is a maximum allowed output line width,
+    changeable through option -w, which is further divided into space for
+    various output fields. When a field has to be truncated because it cannot
+    extend beyond the beginning or the end of the current line to fit in, then
+    a truncation occurs. By default, the string used is a single slash, as in
+    -F /.
+
+    string may have more than one character, as in -F …. Also, in the
+    particular case when string is empty (-F ""), truncation flagging is
+    disabled, and no truncation marks are appended in this case.
+
+    As a matter of convenience to the user, many usual backslashed escape
+    sequences, as found in the C language, are recognized and converted to the
+    corresponding characters by ptx itself.
+
+‘-M string’
+‘--macro-name=string’
+   
+    Select another string to be used instead of ‘xx’, while generating output
+    suitable for nroff, troff or TeX.
+
+‘-O’
+‘--format=roff’
+   
+    Choose an output format suitable for nroff or troff processing. Each output
+    line will look like:
+
+    .xx "tail" "before" "keyword_and_after" "head" "ref"
+
+    so it will be possible to write a ‘.xx’ roff macro to take care of the
+    output typesetting. This is the default output format when GNU extensions
+    are disabled. Option -M can be used to change ‘xx’ to another macro name.
+
+    In this output format, each non-graphical character, like newline and tab,
+    is merely changed to exactly one space, with no special attempt to compress
+    consecutive spaces. Each quote character ‘"’ is doubled so it will be
+    correctly processed by nroff or troff.
+
+‘-T’
+‘--format=tex’
+   
+    Choose an output format suitable for TeX processing. Each output line will
+    look like:
+
+    \xx {tail}{before}{keyword}{after}{head}{ref}
+
+    so it will be possible to write a \xx definition to take care of the output
+    typesetting. Note that when references are not being produced, that is,
+    neither option -A nor option -r is selected, the last parameter of each \xx
+    call is inhibited. Option -M can be used to change ‘xx’ to another macro
+    name.
+
+    In this output format, some special characters, like ‘$’, ‘%’, ‘&’, ‘#’ and
+    ‘_’ are automatically protected with a backslash. Curly brackets ‘{’, ‘}’
+    are protected with a backslash and a pair of dollar signs (to force
+    mathematical mode). The backslash itself produces the sequence \backslash
+    {}. Circumflex and tilde diacritical marks produce the sequence ^\{ } and ~
+    \{ } respectively. Other diacriticized characters of the underlying
+    character set produce an appropriate TeX sequence as far as possible. The
+    other non-graphical characters, like newline and tab, and all other
+    characters which are not part of ASCII, are merely changed to exactly one
+    space, with no special attempt to compress consecutive spaces. Let me know
+    how to improve this special character processing for TeX.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Next: Compatibility in ptx, Previous: Input processing in ptx, Up: ptx
+invocation   [Contents][Index]
+

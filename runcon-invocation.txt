@@ -1,0 +1,63 @@
+Previous: chcon invocation, Up: SELinux context   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+22.2 runcon: Run a command in specified SELinux context
+
+runcon runs file in specified SELinux security context.
+
+Synopses:
+
+runcon context command [args]
+runcon [ -c ] [-u user] [-r role] [-t type] [-l range] command [args]
+
+Run command with completely-specified context, or with current or transitioned
+security context modified by one or more of level, role, type and user.
+
+If none of -c, -t, -u, -r, or -l is specified, the first argument is used as
+the complete context. Any additional arguments after command are interpreted as
+arguments to the command.
+
+With neither context nor command, print the current security context.
+
+Note also the setpriv command which can be used to set the NO_NEW_PRIVS bit
+using setpriv --no-new-privs runcon ..., thus disallowing usage of a security
+context with more privileges than the process would normally have.
+
+runcon accepts the following options. Also see Common options.
+
+‘-c’
+‘--compute’
+   
+    Compute process transition context before modifying.
+
+‘-u user’
+‘--user=user’
+   
+    Set user user in the target security context.
+
+‘-r role’
+‘--role=role’
+   
+    Set role role in the target security context.
+
+‘-t type’
+‘--type=type’
+   
+    Set type type in the target security context.
+
+‘-l range’
+‘--range=range’
+   
+    Set range range in the target security context.
+
+Exit status:
+
+126 if command is found but cannot be invoked
+127 if runcon itself fails or if command cannot be found
+the exit status of command otherwise
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Previous: chcon invocation, Up: SELinux context   [Contents][Index]
+

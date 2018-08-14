@@ -1,0 +1,36 @@
+Next: Numeric tests, Previous: File characteristic tests, Up: test invocation  
+[Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+16.3.4 String tests
+
+These options test string characteristics. You may need to quote string
+arguments for the shell. For example:
+
+test -n "$V"
+
+The quotes here prevent the wrong arguments from being passed to test if ‘$V’
+is empty or contains special characters.
+
+‘-z string’
+   
+    True if the length of string is zero.
+
+‘-n string’
+‘string’
+   
+    True if the length of string is nonzero.
+
+‘string1 = string2’
+   
+    True if the strings are equal.
+
+‘string1 == string2’
+   
+    True if the strings are equal (synonym for =).
+
+‘string1 != string2’
+   
+    True if the strings are not equal.
+

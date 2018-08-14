@@ -1,0 +1,39 @@
+Next: expand invocation, Up: Operating on characters   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+9.1 tr: Translate, squeeze, and/or delete characters
+
+Synopsis:
+
+tr [option]… set1 [set2]
+
+tr copies standard input to standard output, performing one of the following
+operations:
+
+  • translate, and optionally squeeze repeated characters in the result,
+  • squeeze repeated characters,
+  • delete characters,
+  • delete characters, then squeeze repeated characters from the result.
+
+The set1 and (if given) set2 arguments define ordered sets of characters,
+referred to below as set1 and set2. These sets are the characters of the input
+that tr operates on. The --complement (-c, -C) option replaces set1 with its
+complement (all of the characters that are not in set1).
+
+Currently tr fully supports only single-byte characters. Eventually it will
+support multibyte characters; when it does, the -C option will cause it to
+complement the set of characters, whereas -c will cause it to complement the
+set of values. This distinction will matter only when some values are not
+characters, and this is possible only in locales using multibyte encodings when
+the input contains encoding errors.
+
+The program accepts the --help and --version options. See Common options.
+Options must precede operands.
+
+An exit status of zero indicates success, and a nonzero value indicates
+failure.
+
+• Character sets:            Specifying sets of characters.
+• Translating:               Changing one set of characters to another.
+• Squeezing and deleting:    Removing characters.

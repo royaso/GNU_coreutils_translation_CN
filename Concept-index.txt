@@ -1,0 +1,2836 @@
+Previous: GNU Free Documentation License, Up: Top   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Index
+
+ Jump   !   %   &   *   +   -   /   1   2   3   5   <   =   >   \   _   |  
+ to:    A   B   C   D   E   F   G   H   I   J   K   L   M   N   O   P   Q   R  
+        S   T   U   V   W   X   Y   Z  
+
+  Index Entry                                       Section
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+!
+  !:                                                Connectives for test
+  !=:                                               String tests
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+%
+  %:                                                Numeric expressions
+  %b:                                               printf invocation
+  %q:                                               printf invocation
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+&
+  &:                                                Relations for expr
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*
+  *:                                                Numeric expressions
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
++
+  +:                                                String expressions
+  +:                                                Numeric expressions
+  +page_range:                                      pr invocation
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+-
+  -:                                                Numeric expressions
+  -:                                                env invocation
+  - and Unix rm:                                    rm invocation
+  ‘-’, removing files beginning with:               rm invocation
+  --:                                               Common options
+  --across:                                         pr invocation
+  --additional-suffix:                              split invocation
+  --address-radix:                                  od invocation
+  --adjustment:                                     nice invocation
+  --all:                                            unexpand invocation
+  --all:                                            Which files are listed
+  --all:                                            df invocation
+  --all:                                            du invocation
+  --all:                                            stty invocation
+  --all:                                            who invocation
+  --all:                                            nproc invocation
+  --all:                                            uname invocation
+  --all-repeated:                                   uniq invocation
+  --almost-all:                                     Which files are listed
+  --apparent-size:                                  du invocation
+  --append:                                         tee invocation
+  --archive:                                        cp invocation
+  --attributes-only:                                cp invocation
+  --author:                                         What information is listed
+  --auto-reference:                                 Output formatting in ptx
+  --backup:                                         Backup options
+  --backup:                                         cp invocation
+  --backup:                                         install invocation
+  --backup:                                         mv invocation
+  --backup:                                         ln invocation
+  --batch-size:                                     sort invocation
+  --before:                                         tac invocation
+  --binary:                                         md5sum invocation
+  --block-size:                                     Block size
+  --block-size:                                     df invocation
+  --block-size:                                     du invocation
+  --block-size=size:                                Block size
+  --body-numbering:                                 nl invocation
+  --boot:                                           who invocation
+  --bourne-shell:                                   dircolors invocation
+  --break-file:                                     Input processing in ptx
+  --buffer-size:                                    sort invocation
+  --bytes:                                          fold invocation
+  --bytes:                                          head invocation
+  --bytes:                                          tail invocation
+  --bytes:                                          split invocation
+  --bytes:                                          wc invocation
+  --bytes:                                          cut invocation
+  --bytes:                                          du invocation
+  --c-shell:                                        dircolors invocation
+  --canonicalize:                                   readlink invocation
+  --canonicalize-existing:                          readlink invocation
+  --canonicalize-existing:                          realpath invocation
+  --canonicalize-missing:                           readlink invocation
+  --canonicalize-missing:                           realpath invocation
+  --changes:                                        chown invocation
+  --changes:                                        chgrp invocation
+  --changes:                                        chmod invocation
+  --characters:                                     cut invocation
+  --chars:                                          wc invocation
+  --chdir:                                          env invocation
+  --check:                                          sort invocation
+  --check:                                          sort invocation
+  --check-chars:                                    uniq invocation
+  --classify:                                       General output formatting
+  --color:                                          General output formatting
+  --columns:                                        pr invocation
+  --compare:                                        install invocation
+  --complement:                                     cut invocation
+  --compute:                                        runcon invocation
+  --context:                                        What information is listed
+  --context:                                        cp invocation
+  --context:                                        install invocation
+  --context:                                        mv invocation
+  --context:                                        mkdir invocation
+  --context:                                        mkfifo invocation
+  --context:                                        mknod invocation
+  --context:                                        id invocation
+  --count:                                          uniq invocation
+  --count:                                          who invocation
+  --count-links:                                    du invocation
+  --crown-margin:                                   fmt invocation
+  --csh:                                            dircolors invocation
+  --data:                                           sync invocation
+  --date:                                           touch invocation
+  --date:                                           Options for date
+  --dead:                                           who invocation
+  --debug:                                          Options for date
+  --debug:                                          env invocation
+  --debug:                                          numfmt invocation
+  --decode:                                         base64 invocation
+  --delimiter:                                      cut invocation
+  --delimiter:                                      numfmt invocation
+  --delimiters:                                     paste invocation
+  --dereference:                                    Which files are listed
+  --dereference:                                    cp invocation
+  --dereference:                                    chown invocation
+  --dereference:                                    chgrp invocation
+  --dereference:                                    du invocation
+  --dereference:                                    stat invocation
+  --dereference:                                    chcon invocation
+  --dereference-args:                               du invocation
+  --dereference-command-line:                       Which files are listed
+  --dereference-command-line-symlink-to-dir:        Which files are listed
+  --dictionary-order:                               sort invocation
+  --digits:                                         csplit invocation
+  --dir:                                            rm invocation
+  --directory:                                      Which files are listed
+  --directory:                                      install invocation
+  --directory:                                      ln invocation
+  --directory:                                      mktemp invocation
+  --dired:                                          What information is listed
+  --double-space:                                   pr invocation
+  --dry-run:                                        mktemp invocation
+  --echo:                                           shuf invocation
+  --elide-empty-files:                              split invocation
+  --elide-empty-files:                              csplit invocation
+  --endian:                                         od invocation
+  --equal-width:                                    seq invocation
+  --error:                                          stdbuf invocation
+  --escape:                                         Formatting the file names
+  --exact:                                          shred invocation
+  --exclude-from=file:                              du invocation
+  --exclude-type:                                   df invocation
+  --exclude=pattern:                                du invocation
+  --expand-tabs:                                    pr invocation
+  --field:                                          numfmt invocation
+  --field-separator:                                sort invocation
+  --fields:                                         cut invocation
+  --file:                                           stty invocation
+  --file:                                           Options for date
+  --file-system:                                    stat invocation
+  --file-system:                                    sync invocation
+  --file-type:                                      General output formatting
+  --files0-from=file:                               wc invocation
+  --files0-from=file:                               sort invocation
+  --files0-from=file:                               du invocation
+  --filter:                                         split invocation
+  --first-line-number:                              pr invocation
+  --flag-truncation:                                Output formatting in ptx
+  --follow:                                         tail invocation
+  --footer-numbering:                               nl invocation
+  --force:                                          cp invocation
+  --force:                                          mv invocation
+  --force:                                          rm invocation
+  --force:                                          shred invocation
+  --force:                                          ln invocation
+  --foreground:                                     timeout invocation
+  --form-feed:                                      pr invocation
+  --format:                                         od invocation
+  --format:                                         What information is listed
+  --format:                                         General output formatting
+  --format:                                         General output formatting
+  --format:                                         General output formatting
+  --format:                                         General output formatting
+  --format:                                         numfmt invocation
+  --format:                                         seq invocation
+  --format=format:                                  stat invocation
+  --format=roff:                                    Output formatting in ptx
+  --format=tex:                                     Output formatting in ptx
+  --from:                                           chown invocation
+  --from:                                           numfmt invocation
+  --from-unit:                                      numfmt invocation
+  --full-time:                                      What information is listed
+  --gap-size:                                       Output formatting in ptx
+  --general-numeric-sort:                           sort invocation
+  --goal:                                           fmt invocation
+  --group:                                          uniq invocation
+  --group:                                          install invocation
+  --group:                                          id invocation
+  --group-directories-first:                        Which files are listed
+  --grouping:                                       numfmt invocation
+  --groups:                                         id invocation
+  --groups:                                         chroot invocation
+  --hardware-platform:                              uname invocation
+  --head-count:                                     shuf invocation
+  --header:                                         pr invocation
+  --header:                                         General options in join
+  --header:                                         numfmt invocation
+  --header-numbering:                               nl invocation
+  --header=N:                                       numfmt invocation
+  --heading:                                        who invocation
+  --help:                                           Common options
+  --hex-suffixes:                                   split invocation
+  --hide-control-chars:                             Formatting the file names
+  --hide=pattern:                                   Which files are listed
+  --human-numeric-sort:                             sort invocation
+  --human-readable:                                 Block size
+  --human-readable:                                 What information is listed
+  --human-readable:                                 df invocation
+  --human-readable:                                 du invocation
+  --hyperlink:                                      General output formatting
+  --ignore:                                         nproc invocation
+  --ignore-backups:                                 Which files are listed
+  --ignore-case:                                    sort invocation
+  --ignore-case:                                    uniq invocation
+  --ignore-case:                                    Charset selection in ptx
+  --ignore-case:                                    General options in join
+  --ignore-environment:                             env invocation
+  --ignore-fail-on-non-empty:                       rmdir invocation
+  --ignore-file:                                    Input processing in ptx
+  --ignore-garbage:                                 base64 invocation
+  --ignore-interrupts:                              tee invocation
+  --ignore-leading-blanks:                          sort invocation
+  --ignore-missing:                                 md5sum invocation
+  --ignore-nonprinting:                             sort invocation
+  --ignore=pattern:                                 Which files are listed
+  --indent:                                         pr invocation
+  --indicator-style:                                General output formatting
+  --indicator-style:                                General output formatting
+  --indicator-style:                                General output formatting
+  --indicator-style:                                General output formatting
+  --initial:                                        expand invocation
+  --inode:                                          What information is listed
+  --inodes:                                         df invocation
+  --inodes:                                         du invocation
+  --input:                                          stdbuf invocation
+  --input-range:                                    shuf invocation
+  --interactive:                                    cp invocation
+  --interactive:                                    mv invocation
+  --interactive:                                    rm invocation
+  --interactive:                                    ln invocation
+  --invalid:                                        numfmt invocation
+  --io-blocks:                                      truncate invocation
+  --iso-8601[=timespec]:                            Options for date
+  --iterations=number:                              shred invocation
+  --join-blank-lines:                               nl invocation
+  --join-lines:                                     pr invocation
+  --keep-files:                                     csplit invocation
+  --kernel-name:                                    uname invocation
+  --kernel-release:                                 uname invocation
+  --kernel-version:                                 uname invocation
+  --key:                                            sort invocation
+  --kibibytes:                                      General output formatting
+  --kill-after:                                     timeout invocation
+  --length:                                         pr invocation
+  --length:                                         b2sum invocation
+  --line-bytes:                                     split invocation
+  --line-increment:                                 nl invocation
+  --lines:                                          head invocation
+  --lines:                                          tail invocation
+  --lines:                                          split invocation
+  --lines:                                          wc invocation
+  --link:                                           cp invocation
+  --literal:                                        Formatting the file names
+  --local:                                          df invocation
+  --logical:                                        ln invocation
+  --logical:                                        realpath invocation
+  --logical:                                        pwd invocation
+  --login:                                          who invocation
+  --lookup:                                         who invocation
+  --machine:                                        uname invocation
+  --macro-name:                                     Output formatting in ptx
+  --max-depth=depth:                                du invocation
+  --max-line-length:                                wc invocation
+  --max-unchanged-stats:                            tail invocation
+  --merge:                                          pr invocation
+  --merge:                                          sort invocation
+  --mesg:                                           who invocation
+  --message:                                        who invocation
+  --mode:                                           install invocation
+  --mode:                                           mkdir invocation
+  --mode:                                           mkfifo invocation
+  --mode:                                           mknod invocation
+  --month-sort:                                     sort invocation
+  --multiple:                                       basename invocation
+  --name:                                           id invocation
+  --no-clobber:                                     cp invocation
+  --no-clobber:                                     mv invocation
+  --no-create:                                      touch invocation
+  --no-create:                                      truncate invocation
+  --no-dereference:                                 cp invocation
+  --no-dereference:                                 ln invocation
+  --no-dereference:                                 chown invocation
+  --no-dereference:                                 chgrp invocation
+  --no-dereference:                                 touch invocation
+  --no-dereference:                                 du invocation
+  --no-dereference:                                 chcon invocation
+  --no-file-warnings:                               pr invocation
+  --no-group:                                       What information is listed
+  --no-newline:                                     readlink invocation
+  --no-preserve-root:                               rm invocation
+  --no-preserve-root:                               chown invocation
+  --no-preserve-root:                               chgrp invocation
+  --no-preserve-root:                               chmod invocation
+  --no-preserve-root:                               chcon invocation
+  --no-renumber:                                    nl invocation
+  --no-symlinks:                                    realpath invocation
+  --no-sync:                                        df invocation
+  --no-target-directory:                            Target directory
+  --no-target-directory:                            cp invocation
+  --no-target-directory:                            install invocation
+  --no-target-directory:                            mv invocation
+  --no-target-directory:                            ln invocation
+  --nodename:                                       uname invocation
+  --null:                                           du invocation
+  --null:                                           printenv invocation
+  --null:                                           env invocation
+  --number:                                         cat invocation
+  --number:                                         split invocation
+  --number-format:                                  nl invocation
+  --number-lines:                                   pr invocation
+  --number-nonblank:                                cat invocation
+  --number-separator:                               nl invocation
+  --number-width:                                   nl invocation
+  --numeric-sort:                                   sort invocation
+  --numeric-suffixes:                               split invocation
+  --numeric-uid-gid:                                What information is listed
+  --omit-header:                                    pr invocation
+  --omit-pagination:                                pr invocation
+  --one-file-system:                                cp invocation
+  --one-file-system:                                rm invocation
+  --one-file-system:                                du invocation
+  --only-delimited:                                 cut invocation
+  --only-file:                                      Input processing in ptx
+  --operating-system:                               uname invocation
+  --output:                                         sort invocation
+  --output:                                         shuf invocation
+  --output:                                         df invocation
+  --output:                                         stdbuf invocation
+  --output-delimiter:                               cut invocation
+  --output-duplicates:                              od invocation
+  --output-error:                                   tee invocation
+  --output-tabs:                                    pr invocation
+  --owner:                                          install invocation
+  --padding:                                        numfmt invocation
+  --pages=page_range:                               pr invocation
+  --page_width:                                     pr invocation
+  --parallel:                                       sort invocation
+  --parents:                                        cp invocation
+  --parents:                                        mkdir invocation
+  --parents:                                        rmdir invocation
+  --physical:                                       ln invocation
+  --physical:                                       realpath invocation
+  --physical:                                       pwd invocation
+  --pid:                                            tail invocation
+  --portability:                                    df invocation
+  --portability:                                    pathchk invocation
+  --prefix:                                         csplit invocation
+  --preserve:                                       cp invocation
+  --preserve-context:                               install invocation
+  --preserve-root:                                  rm invocation
+  --preserve-root:                                  chown invocation
+  --preserve-root:                                  chgrp invocation
+  --preserve-root:                                  chmod invocation
+  --preserve-root:                                  chcon invocation
+  --preserve-status:                                timeout invocation
+  --preserve-timestamps:                            install invocation
+  --print-database:                                 dircolors invocation
+  --print-type:                                     df invocation
+  --printf=format:                                  stat invocation
+  --process:                                        who invocation
+  --processor:                                      uname invocation
+  --quiet:                                          head invocation
+  --quiet:                                          tail invocation
+  --quiet:                                          csplit invocation
+  --quiet:                                          md5sum invocation
+  --quiet:                                          readlink invocation
+  --quiet:                                          chown invocation
+  --quiet:                                          chgrp invocation
+  --quiet:                                          chmod invocation
+  --quiet:                                          mktemp invocation
+  --quiet:                                          realpath invocation
+  --quiet:                                          tty invocation
+  --quote-name:                                     Formatting the file names
+  --quoting-style:                                  Formatting the file names
+  --quoting-style:                                  Formatting the file names
+  --quoting-style:                                  Formatting the file names
+  --quoting-style:                                  Formatting the file names
+  --random-sort:                                    sort invocation
+  --random-source:                                  sort invocation
+  --random-source:                                  shuf invocation
+  --random-source:                                  shred invocation
+  --range:                                          chcon invocation
+  --range:                                          runcon invocation
+  --read-bytes:                                     od invocation
+  --real:                                           id invocation
+  --recursive:                                      Which files are listed
+  --recursive:                                      cp invocation
+  --recursive:                                      rm invocation
+  --recursive:                                      chown invocation
+  --recursive:                                      chgrp invocation
+  --recursive:                                      chmod invocation
+  --recursive:                                      chcon invocation
+  --reference:                                      chown invocation
+  --reference:                                      chgrp invocation
+  --reference:                                      chmod invocation
+  --reference:                                      touch invocation
+  --reference:                                      truncate invocation
+  --reference:                                      Options for date
+  --reference:                                      chcon invocation
+  --references:                                     Input processing in ptx
+  --reflink[=when]:                                 cp invocation
+  --regex:                                          tac invocation
+  --relative:                                       ln invocation
+  --relative-base:                                  realpath invocation
+  --relative-base:                                  Realpath usage examples
+  --relative-to:                                    realpath invocation
+  --relative-to:                                    Realpath usage examples
+  --remove:                                         shred invocation
+  --remove-destination:                             cp invocation
+  --remove=unlink:                                  shred invocation
+  --remove=wipe:                                    shred invocation
+  --remove=wipesync:                                shred invocation
+  --repeat:                                         shuf invocation
+  --repeated:                                       uniq invocation
+  --retry:                                          tail invocation
+  --reverse:                                        sort invocation
+  --reverse:                                        Sorting the output
+  --rfc-2822:                                       Options for date
+  --rfc-3339=timespec:                              Options for date
+  --rfc-822:                                        Options for date
+  --rfc-email:                                      Options for date
+  --right-side-refs:                                Output formatting in ptx
+  --role:                                           chcon invocation
+  --role:                                           runcon invocation
+  --round:                                          numfmt invocation
+  --round=down:                                     numfmt invocation
+  --round=from-zero:                                numfmt invocation
+  --round=nearest:                                  numfmt invocation
+  --round=towards-zero:                             numfmt invocation
+  --round=up:                                       numfmt invocation
+  --runlevel:                                       who invocation
+  --save:                                           stty invocation
+  --section-delimiter:                              nl invocation
+  --sentence-regexp:                                Input processing in ptx
+  --sep-string:                                     pr invocation
+  --separate-dirs:                                  du invocation
+  --separator:                                      tac invocation
+  --separator:                                      pr invocation
+  --separator:                                      split invocation
+  --separator:                                      seq invocation
+  --serial:                                         paste invocation
+  --set:                                            Options for date
+  --sh:                                             dircolors invocation
+  --show-all:                                       cat invocation
+  --show-control-chars:                             pr invocation
+  --show-control-chars:                             Formatting the file names
+  --show-ends:                                      cat invocation
+  --show-nonprinting:                               cat invocation
+  --show-nonprinting:                               pr invocation
+  --show-tabs:                                      cat invocation
+  --si:                                             Block size
+  --si:                                             What information is listed
+  --si:                                             df invocation
+  --si:                                             du invocation
+  --signal:                                         timeout invocation
+  --silent:                                         head invocation
+  --silent:                                         tail invocation
+  --silent:                                         csplit invocation
+  --silent:                                         readlink invocation
+  --silent:                                         chown invocation
+  --silent:                                         chgrp invocation
+  --silent:                                         chmod invocation
+  --silent:                                         tty invocation
+  --size:                                           What information is listed
+  --size:                                           truncate invocation
+  --size=bytes:                                     shred invocation
+  --skip-bytes:                                     od invocation
+  --skip-chars:                                     uniq invocation
+  --skip-chdir:                                     chroot invocation
+  --skip-fields:                                    uniq invocation
+  --sleep-interval:                                 tail invocation
+  --sort:                                           sort invocation
+  --sort:                                           sort invocation
+  --sort:                                           sort invocation
+  --sort:                                           sort invocation
+  --sort:                                           sort invocation
+  --sort:                                           Sorting the output
+  --sort:                                           Sorting the output
+  --sort:                                           Sorting the output
+  --sort:                                           Sorting the output
+  --sort:                                           Sorting the output
+  --spaces:                                         fold invocation
+  --sparse=when:                                    cp invocation
+  --split-only:                                     fmt invocation
+  --split-string:                                   env invocation
+  --squeeze-blank:                                  cat invocation
+  --stable:                                         sort invocation
+  --starting-line-number:                           nl invocation
+  --status:                                         md5sum invocation
+  --strict:                                         md5sum invocation
+  --strings:                                        od invocation
+  --strip:                                          install invocation
+  --strip:                                          realpath invocation
+  --strip-program:                                  install invocation
+  --strip-trailing-slashes:                         cp invocation
+  --strip-trailing-slashes:                         mv invocation
+  --suffix:                                         Backup options
+  --suffix:                                         cp invocation
+  --suffix:                                         install invocation
+  --suffix:                                         mv invocation
+  --suffix:                                         ln invocation
+  --suffix:                                         basename invocation
+  --suffix:                                         mktemp invocation
+  --suffix:                                         numfmt invocation
+  --suffix-format:                                  csplit invocation
+  --suffix-length:                                  split invocation
+  --summarize:                                      du invocation
+  --suppress-matched:                               csplit invocation
+  --symbolic:                                       ln invocation
+  --symbolic-link:                                  cp invocation
+  --sync:                                           df invocation
+  --sysv:                                           sum invocation
+  --tabs:                                           expand invocation
+  --tabs:                                           unexpand invocation
+  --tabsize:                                        General output formatting
+  --tag:                                            md5sum invocation
+  --tagged-paragraph:                               fmt invocation
+  --target-directory:                               Target directory
+  --target-directory:                               cp invocation
+  --target-directory:                               install invocation
+  --target-directory:                               mv invocation
+  --target-directory:                               ln invocation
+  --temporary-directory:                            sort invocation
+  --terse:                                          stat invocation
+  --text:                                           md5sum invocation
+  --threshold:                                      du invocation
+  --time:                                           Sorting the output
+  --time:                                           Sorting the output
+  --time:                                           touch invocation
+  --time:                                           touch invocation
+  --time:                                           du invocation
+  --time:                                           du invocation
+  --time:                                           du invocation
+  --time:                                           who invocation
+  --time-style:                                     Formatting file timestamps
+  --time-style:                                     du invocation
+  --tmpdir:                                         mktemp invocation
+  --to:                                             numfmt invocation
+  --to-unit:                                        numfmt invocation
+  --total:                                          df invocation
+  --total:                                          du invocation
+  --traditional:                                    od invocation
+  --type:                                           df invocation
+  --type:                                           chcon invocation
+  --type:                                           runcon invocation
+  --unbuffered:                                     split invocation
+  --uniform-spacing:                                fmt invocation
+  --unique:                                         sort invocation
+  --unique:                                         uniq invocation
+  --universal:                                      Options for date
+  --unset:                                          env invocation
+  --update:                                         cp invocation
+  --update:                                         mv invocation
+  --user:                                           id invocation
+  --user:                                           chcon invocation
+  --user:                                           runcon invocation
+  --userspec:                                       chroot invocation
+  --utc:                                            Options for date
+  --verbose:                                        head invocation
+  --verbose:                                        tail invocation
+  --verbose:                                        split invocation
+  --verbose:                                        cp invocation
+  --verbose:                                        install invocation
+  --verbose:                                        mv invocation
+  --verbose:                                        rm invocation
+  --verbose:                                        shred invocation
+  --verbose:                                        ln invocation
+  --verbose:                                        mkdir invocation
+  --verbose:                                        readlink invocation
+  --verbose:                                        rmdir invocation
+  --verbose:                                        chown invocation
+  --verbose:                                        chgrp invocation
+  --verbose:                                        chmod invocation
+  --verbose:                                        chcon invocation
+  --verbose:                                        timeout invocation
+  --version:                                        Common options
+  --version-sort:                                   sort invocation
+  --warn:                                           md5sum invocation
+  --width:                                          od invocation
+  --width:                                          fmt invocation
+  --width:                                          pr invocation
+  --width:                                          fold invocation
+  --width:                                          Output formatting in ptx
+  --width:                                          General output formatting
+  --word-regexp:                                    Input processing in ptx
+  --words:                                          wc invocation
+  --wrap:                                           base64 invocation
+  --writable:                                       who invocation
+  --zero:                                           md5sum invocation
+  --zero:                                           shred invocation
+  --zero:                                           readlink invocation
+  --zero:                                           basename invocation
+  --zero:                                           dirname invocation
+  --zero:                                           realpath invocation
+  --zero:                                           id invocation
+  --zero-terminated:                                head invocation
+  --zero-terminated:                                tail invocation
+  --zero-terminated:                                sort invocation
+  --zero-terminated:                                shuf invocation
+  --zero-terminated:                                uniq invocation
+  --zero-terminated:                                comm invocation
+  --zero-terminated:                                cut invocation
+  --zero-terminated:                                paste invocation
+  --zero-terminated:                                General options in join
+  --zero-terminated:                                numfmt invocation
+  -0:                                               du invocation
+  -0:                                               printenv invocation
+  -0:                                               env invocation
+  -1:                                               comm invocation
+  -1:                                               General options in join
+  -1:                                               General output formatting
+  -2:                                               comm invocation
+  -2:                                               General options in join
+  -3:                                               comm invocation
+  -A:                                               cat invocation
+  -A:                                               od invocation
+  -a:                                               od invocation
+  -a:                                               pr invocation
+  -a:                                               split invocation
+  -A:                                               Output formatting in ptx
+  -a:                                               General options in join
+  -a:                                               unexpand invocation
+  -a:                                               Which files are listed
+  -A:                                               Which files are listed
+  -a:                                               cp invocation
+  -a:                                               touch invocation
+  -a:                                               df invocation
+  -a:                                               du invocation
+  -a:                                               Connectives for test
+  -a:                                               tee invocation
+  -a:                                               basename invocation
+  -a:                                               stty invocation
+  -a:                                               who invocation
+  -a:                                               uname invocation
+  -b:                                               Backup options
+  -b:                                               cat invocation
+  -b:                                               tac invocation
+  -b:                                               nl invocation
+  -b:                                               od invocation
+  -b:                                               fold invocation
+  -b:                                               split invocation
+  -b:                                               csplit invocation
+  -b:                                               md5sum invocation
+  -b:                                               sort invocation
+  -b:                                               Input processing in ptx
+  -b:                                               cut invocation
+  -B:                                               Which files are listed
+  -b:                                               Formatting the file names
+  -b:                                               dircolors invocation
+  -b:                                               cp invocation
+  -b:                                               install invocation
+  -b:                                               mv invocation
+  -b:                                               ln invocation
+  -B:                                               df invocation
+  -B:                                               du invocation
+  -b:                                               du invocation
+  -b:                                               File type tests
+  -b:                                               who invocation
+  -c:                                               od invocation
+  -c:                                               fmt invocation
+  -c:                                               pr invocation
+  -c:                                               head invocation
+  -c:                                               tail invocation
+  -C:                                               split invocation
+  -c:                                               wc invocation
+  -c:                                               sort invocation
+  -c:                                               sort invocation
+  -c:                                               shuf invocation
+  -c:                                               uniq invocation
+  -c:                                               cut invocation
+  -c:                                               Sorting the output
+  -C:                                               General output formatting
+  -c:                                               dircolors invocation
+  -C:                                               install invocation
+  -c:                                               install invocation
+  -c:                                               chown invocation
+  -c:                                               chgrp invocation
+  -c:                                               chmod invocation
+  -c:                                               touch invocation
+  -c:                                               du invocation
+  -c:                                               stat invocation
+  -c:                                               truncate invocation
+  -c:                                               File type tests
+  -c:                                               runcon invocation
+  -C:                                               env invocation
+  -column:                                          pr invocation
+  -d:                                               nl invocation
+  -d:                                               od invocation
+  -d:                                               base64 invocation
+  -d:                                               pr invocation
+  -d:                                               split invocation
+  -d:                                               sort invocation
+  -d:                                               uniq invocation
+  -D:                                               uniq invocation
+  -d:                                               cut invocation
+  -d:                                               paste invocation
+  -d:                                               Which files are listed
+  -D:                                               What information is listed
+  -d:                                               cp invocation
+  -D:                                               install invocation
+  -d:                                               install invocation
+  -d:                                               rm invocation
+  -d:                                               ln invocation
+  -d:                                               touch invocation
+  -D:                                               du invocation
+  -d:                                               File type tests
+  -d:                                               mktemp invocation
+  -d:                                               who invocation
+  -d:                                               Options for date
+  -d:                                               numfmt invocation
+  -d depth:                                         du invocation
+  -e:                                               cat invocation
+  -E:                                               cat invocation
+  -e:                                               pr invocation
+  -e:                                               split invocation
+  -e:                                               General options in join
+  -e:                                               readlink invocation
+  -e:                                               echo invocation
+  -E:                                               echo invocation
+  -e:                                               File characteristic tests
+  -e:                                               realpath invocation
+  -e:                                               stdbuf invocation
+  -ef:                                              File characteristic tests
+  -eq:                                              Numeric tests
+  -f:                                               nl invocation
+  -f:                                               od invocation
+  -F:                                               pr invocation
+  -f:                                               pr invocation
+  -f:                                               tail invocation
+  -F:                                               tail invocation
+  -f:                                               csplit invocation
+  -f:                                               sort invocation
+  -f:                                               uniq invocation
+  -f:                                               Charset selection in ptx
+  -F:                                               Output formatting in ptx
+  -f:                                               cut invocation
+  -f:                                               Sorting the output
+  -F:                                               General output formatting
+  -f:                                               cp invocation
+  -f:                                               mv invocation
+  -f:                                               rm invocation
+  -f:                                               shred invocation
+  -F:                                               ln invocation
+  -f:                                               ln invocation
+  -f:                                               readlink invocation
+  -f:                                               chown invocation
+  -f:                                               chgrp invocation
+  -f:                                               chmod invocation
+  -f:                                               touch invocation
+  -f:                                               stat invocation
+  -f:                                               File type tests
+  -F:                                               stty invocation
+  -f:                                               Options for date
+  -f:                                               seq invocation
+  -g:                                               fmt invocation
+  -g:                                               sort invocation
+  -g:                                               Output formatting in ptx
+  -g:                                               What information is listed
+  -G:                                               What information is listed
+  -g:                                               install invocation
+  -g:                                               Access permission tests
+  -G:                                               Access permission tests
+  -g:                                               stty invocation
+  -g:                                               id invocation
+  -G:                                               id invocation
+  -ge:                                              Numeric tests
+  -gt:                                              Numeric tests
+  -h:                                               Block size
+  -H:                                               Traversing symlinks
+  -h:                                               nl invocation
+  -h:                                               pr invocation
+  -h:                                               sort invocation
+  -H:                                               Which files are listed
+  -h:                                               What information is listed
+  -H:                                               cp invocation
+  -h:                                               chown invocation
+  -H:                                               chown invocation
+  -h:                                               chgrp invocation
+  -H:                                               chgrp invocation
+  -h:                                               touch invocation
+  -h:                                               df invocation
+  -H:                                               df invocation
+  -H:                                               du invocation
+  -h:                                               du invocation
+  -h:                                               File type tests
+  -H:                                               who invocation
+  -h:                                               chcon invocation
+  -H:                                               chcon invocation
+  -i:                                               nl invocation
+  -i:                                               od invocation
+  -i:                                               base64 invocation
+  -i:                                               pr invocation
+  -i:                                               sort invocation
+  -i:                                               shuf invocation
+  -i:                                               uniq invocation
+  -i:                                               Input processing in ptx
+  -i:                                               General options in join
+  -i:                                               expand invocation
+  -I:                                               Which files are listed
+  -i:                                               What information is listed
+  -i:                                               cp invocation
+  -i:                                               mv invocation
+  -i:                                               rm invocation
+  -I:                                               rm invocation
+  -i:                                               ln invocation
+  -i:                                               df invocation
+  -i:                                               tee invocation
+  -i:                                               uname invocation
+  -i:                                               env invocation
+  -i:                                               stdbuf invocation
+  -I[timespec]:                                     Options for date
+  -j:                                               od invocation
+  -J:                                               pr invocation
+  -k:                                               Block size
+  -k:                                               csplit invocation
+  -k:                                               sort invocation
+  -k:                                               General output formatting
+  -k:                                               df invocation
+  -k:                                               du invocation
+  -k:                                               Access permission tests
+  -k:                                               timeout invocation
+  -L:                                               Traversing symlinks
+  -l:                                               nl invocation
+  -l:                                               od invocation
+  -l:                                               pr invocation
+  -l:                                               split invocation
+  -l:                                               wc invocation
+  -L:                                               wc invocation
+  -l:                                               b2sum invocation
+  -L:                                               Which files are listed
+  -l:                                               What information is listed
+  -l:                                               cp invocation
+  -L:                                               cp invocation
+  -L:                                               ln invocation
+  -L:                                               chown invocation
+  -L:                                               chgrp invocation
+  -l:                                               df invocation
+  -L:                                               du invocation
+  -l:                                               du invocation
+  -L:                                               stat invocation
+  -L:                                               File type tests
+  -L:                                               realpath invocation
+  -L:                                               pwd invocation
+  -l:                                               who invocation
+  -L:                                               chcon invocation
+  -l:                                               chcon invocation
+  -l:                                               runcon invocation
+  -le:                                              Numeric tests
+  -lt:                                              Numeric tests
+  -m:                                               pr invocation
+  -m:                                               wc invocation
+  -m:                                               sort invocation
+  -M:                                               sort invocation
+  -M:                                               Output formatting in ptx
+  -m:                                               General output formatting
+  -m:                                               install invocation
+  -m:                                               mkdir invocation
+  -m:                                               mkfifo invocation
+  -m:                                               mknod invocation
+  -m:                                               readlink invocation
+  -m:                                               touch invocation
+  -m:                                               du invocation
+  -m:                                               realpath invocation
+  -m:                                               who invocation
+  -m:                                               uname invocation
+  -n:                                               cat invocation
+  -n:                                               nl invocation
+  -N:                                               od invocation
+  -n:                                               pr invocation
+  -N:                                               pr invocation
+  -n:                                               head invocation
+  -n:                                               tail invocation
+  -n:                                               split invocation
+  -n:                                               csplit invocation
+  -n:                                               sort invocation
+  -n:                                               shuf invocation
+  -n:                                               cut invocation
+  -n:                                               What information is listed
+  -N:                                               Formatting the file names
+  -n:                                               cp invocation
+  -n:                                               mv invocation
+  -n:                                               ln invocation
+  -n:                                               readlink invocation
+  -n:                                               echo invocation
+  -n:                                               String tests
+  -n:                                               id invocation
+  -n:                                               uname invocation
+  -n:                                               nice invocation
+  -n number:                                        shred invocation
+  -ne:                                              Numeric tests
+  -nt:                                              File characteristic tests
+  -o:                                               od invocation
+  -o:                                               pr invocation
+  -o:                                               sort invocation
+  -o:                                               shuf invocation
+  -o:                                               Input processing in ptx
+  -O:                                               Output formatting in ptx
+  -o:                                               What information is listed
+  -o:                                               install invocation
+  -o:                                               truncate invocation
+  -O:                                               Access permission tests
+  -o:                                               Connectives for test
+  -o:                                               uname invocation
+  -o:                                               stdbuf invocation
+  -ot:                                              File characteristic tests
+  -P:                                               Traversing symlinks
+  -p:                                               nl invocation
+  -p:                                               General output formatting
+  -p:                                               dircolors invocation
+  -P:                                               cp invocation
+  -p:                                               cp invocation
+  -p:                                               install invocation
+  -P:                                               ln invocation
+  -p:                                               mkdir invocation
+  -p:                                               rmdir invocation
+  -P:                                               chown invocation
+  -P:                                               chgrp invocation
+  -P:                                               df invocation
+  -P:                                               du invocation
+  -p:                                               File type tests
+  -p:                                               tee invocation
+  -p:                                               pathchk invocation
+  -P:                                               pathchk invocation
+  -p:                                               mktemp invocation
+  -P:                                               realpath invocation
+  -P:                                               pwd invocation
+  -p:                                               who invocation
+  -p:                                               uname invocation
+  -P:                                               chcon invocation
+  -q:                                               head invocation
+  -q:                                               tail invocation
+  -q:                                               csplit invocation
+  -q:                                               Formatting the file names
+  -Q:                                               Formatting the file names
+  -q:                                               readlink invocation
+  -q:                                               mktemp invocation
+  -q:                                               realpath invocation
+  -q:                                               who invocation
+  -r:                                               tac invocation
+  -r:                                               pr invocation
+  -r:                                               sum invocation
+  -r:                                               sort invocation
+  -R:                                               sort invocation
+  -r:                                               shuf invocation
+  -r:                                               Input processing in ptx
+  -R:                                               Output formatting in ptx
+  -R:                                               Which files are listed
+  -r:                                               Sorting the output
+  -R:                                               cp invocation
+  -r:                                               cp invocation
+  -r:                                               rm invocation
+  -R:                                               rm invocation
+  -r:                                               ln invocation
+  -R:                                               chown invocation
+  -R:                                               chgrp invocation
+  -R:                                               chmod invocation
+  -r:                                               touch invocation
+  -r:                                               truncate invocation
+  -r:                                               Access permission tests
+  -r:                                               id invocation
+  -r:                                               who invocation
+  -r:                                               Options for date
+  -R:                                               Options for date
+  -r:                                               uname invocation
+  -R:                                               chcon invocation
+  -r:                                               chcon invocation
+  -r:                                               runcon invocation
+  -S:                                               Backup options
+  -s:                                               cat invocation
+  -s:                                               tac invocation
+  -s:                                               nl invocation
+  -S:                                               od invocation
+  -s:                                               od invocation
+  -s:                                               fmt invocation
+  -s:                                               pr invocation
+  -S:                                               pr invocation
+  -s:                                               fold invocation
+  -s:                                               tail invocation
+  -s:                                               csplit invocation
+  -s:                                               sum invocation
+  -s:                                               sort invocation
+  -S:                                               sort invocation
+  -s:                                               uniq invocation
+  -S:                                               Input processing in ptx
+  -s:                                               cut invocation
+  -s:                                               paste invocation
+  -s:                                               What information is listed
+  -S:                                               Sorting the output
+  -s:                                               cp invocation
+  -S:                                               cp invocation
+  -s:                                               install invocation
+  -S:                                               install invocation
+  -S:                                               mv invocation
+  -s:                                               ln invocation
+  -S:                                               ln invocation
+  -s:                                               readlink invocation
+  -S:                                               du invocation
+  -s:                                               du invocation
+  -s:                                               truncate invocation
+  -S:                                               File type tests
+  -s:                                               File characteristic tests
+  -s:                                               basename invocation
+  -s:                                               realpath invocation
+  -s:                                               tty invocation
+  -s:                                               who invocation
+  -s:                                               Options for date
+  -s:                                               uname invocation
+  -S:                                               env invocation
+  -s:                                               timeout invocation
+  -s:                                               seq invocation
+  -s bytes:                                         shred invocation
+  -S, env and single quotes:                        env invocation
+  -t:                                               cat invocation
+  -T:                                               cat invocation
+  -t:                                               od invocation
+  -t:                                               fmt invocation
+  -t:                                               pr invocation
+  -T:                                               pr invocation
+  -t:                                               split invocation
+  -t:                                               md5sum invocation
+  -t:                                               sort invocation
+  -T:                                               sort invocation
+  -T:                                               Output formatting in ptx
+  -t:                                               expand invocation
+  -t:                                               unexpand invocation
+  -t:                                               Sorting the output
+  -T:                                               General output formatting
+  -t:                                               cp invocation
+  -T:                                               cp invocation
+  -t:                                               install invocation
+  -T:                                               install invocation
+  -t:                                               mv invocation
+  -T:                                               mv invocation
+  -t:                                               ln invocation
+  -T:                                               ln invocation
+  -t:                                               df invocation
+  -T:                                               df invocation
+  -t:                                               du invocation
+  -t:                                               stat invocation
+  -t:                                               File type tests
+  -t:                                               mktemp invocation
+  -t:                                               who invocation
+  -T:                                               who invocation
+  -t:                                               chcon invocation
+  -t:                                               runcon invocation
+  -u:                                               cat invocation
+  -u:                                               fmt invocation
+  -u:                                               split invocation
+  -u:                                               sort invocation
+  -u:                                               uniq invocation
+  -u:                                               Sorting the output
+  -U:                                               Sorting the output
+  -u:                                               cp invocation
+  -u:                                               mv invocation
+  -u:                                               shred invocation
+  -u:                                               Access permission tests
+  -u:                                               mktemp invocation
+  -u:                                               id invocation
+  -u:                                               who invocation
+  -u:                                               Options for date
+  -u:                                               chcon invocation
+  -u:                                               runcon invocation
+  -u:                                               env invocation
+  -v:                                               cat invocation
+  -v:                                               nl invocation
+  -v:                                               od invocation
+  -v:                                               pr invocation
+  -v:                                               head invocation
+  -v:                                               tail invocation
+  -V:                                               sort invocation
+  -v:                                               Sorting the output
+  -v:                                               cp invocation
+  -v:                                               install invocation
+  -v:                                               mv invocation
+  -v:                                               rm invocation
+  -v:                                               shred invocation
+  -v:                                               ln invocation
+  -v:                                               mkdir invocation
+  -v:                                               readlink invocation
+  -v:                                               rmdir invocation
+  -v:                                               chown invocation
+  -v:                                               chgrp invocation
+  -v:                                               chmod invocation
+  -v:                                               uname invocation
+  -v:                                               chcon invocation
+  -v:                                               env invocation
+  -v:                                               timeout invocation
+  -w:                                               nl invocation
+  -w:                                               od invocation
+  -w:                                               base64 invocation
+  -w:                                               fmt invocation
+  -w:                                               pr invocation
+  -W:                                               pr invocation
+  -w:                                               fold invocation
+  -w:                                               wc invocation
+  -w:                                               md5sum invocation
+  -w:                                               uniq invocation
+  -W:                                               Input processing in ptx
+  -w:                                               Output formatting in ptx
+  -w:                                               General output formatting
+  -w:                                               Access permission tests
+  -w:                                               who invocation
+  -w:                                               seq invocation
+  -width:                                           fmt invocation
+  -x:                                               od invocation
+  -x:                                               split invocation
+  -X:                                               Sorting the output
+  -x:                                               General output formatting
+  -x:                                               cp invocation
+  -x:                                               shred invocation
+  -x:                                               df invocation
+  -x:                                               du invocation
+  -x:                                               Access permission tests
+  -X file:                                          du invocation
+  -z:                                               head invocation
+  -z:                                               tail invocation
+  -z:                                               csplit invocation
+  -z:                                               md5sum invocation
+  -z:                                               sort invocation
+  -z:                                               shuf invocation
+  -z:                                               uniq invocation
+  -z:                                               comm invocation
+  -z:                                               cut invocation
+  -z:                                               paste invocation
+  -z:                                               General options in join
+  -Z:                                               What information is listed
+  -Z:                                               cp invocation
+  -Z:                                               install invocation
+  -Z:                                               mv invocation
+  -z:                                               shred invocation
+  -Z:                                               mkdir invocation
+  -Z:                                               mkfifo invocation
+  -Z:                                               mknod invocation
+  -z:                                               readlink invocation
+  -z:                                               String tests
+  -z:                                               basename invocation
+  -z:                                               dirname invocation
+  -z:                                               realpath invocation
+  -Z:                                               id invocation
+  -z:                                               id invocation
+  -z:                                               numfmt invocation
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+/
+  /:                                                Numeric expressions
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1
+  128-bit checksum:                                 md5sum invocation
+  16-bit checksum:                                  sum invocation
+  160-bit checksum:                                 sha1sum invocation
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2
+  224-bit checksum:                                 sha2 utilities
+  256-bit checksum:                                 sha2 utilities
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3
+  384-bit checksum:                                 sha2 utilities
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5
+  512-bit checksum:                                 b2sum invocation
+  512-bit checksum:                                 sha2 utilities
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<
+  <:                                                Relations for expr
+  <=:                                               Relations for expr
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+=
+  =:                                                Relations for expr
+  =:                                                String tests
+  ==:                                               Relations for expr
+  ==:                                               String tests
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+>
+  >:                                                Relations for expr
+  >=:                                               Relations for expr
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+\
+  \( regexp operator:                               String expressions
+  \+ regexp operator:                               String expressions
+  \? regexp operator:                               String expressions
+  \c:                                               printf invocation
+  \ooo:                                             printf invocation
+  \uhhhh:                                           printf invocation
+  \Uhhhhhhhh:                                       printf invocation
+  \xhh:                                             printf invocation
+  \| regexp operator:                               String expressions
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+_
+  _POSIX2_VERSION:                                  Standards conformance
+  _POSIX2_VERSION:                                  tail invocation
+  _POSIX2_VERSION:                                  sort invocation
+  _POSIX2_VERSION:                                  uniq invocation
+  _POSIX2_VERSION:                                  touch invocation
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+|
+  |:                                                Relations for expr
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+A
+  abbreviations for months:                         Calendar date items
+  access permission tests:                          Access permission tests
+  access permissions, changing:                     chmod invocation
+  access time, changing:                            touch invocation
+  access timestamp:                                 dd invocation
+  access timestamp, printing or sorting files by:   Sorting the output
+  access timestamp, show the most recent:           du invocation
+  across columns:                                   pr invocation
+  across, listing files:                            General output formatting
+  adding permissions:                               Setting Permissions
+  addition:                                         Numeric expressions
+  ago in date strings:                              Relative items in date
+                                                    strings
+  all lines, grouping:                              uniq invocation
+  all repeated lines, outputting:                   uniq invocation
+  alnum:                                            Character sets
+  alpha:                                            Character sets
+  alternate ebcdic, converting to:                  dd invocation
+  always color option:                              General output formatting
+  always hyperlink option:                          General output formatting
+  always interactive option:                        rm invocation
+  am i:                                             who invocation
+  am in date strings:                               Time of day items
+  and operator:                                     Connectives for test
+  and operator:                                     Relations for expr
+  append:                                           dd invocation
+  appending to the output file:                     dd invocation
+  appropriate privileges:                           install invocation
+  appropriate privileges:                           Setting the time
+  appropriate privileges:                           hostname invocation
+  appropriate privileges:                           nice invocation
+  arbitrary date strings, debugging:                Options for date
+  arbitrary date strings, parsing:                  Options for date
+  arbitrary text, displaying:                       echo invocation
+  arch:                                             arch invocation
+  arithmetic tests:                                 Numeric tests
+  ASCII dump of files:                              od invocation
+  ascii, converting to:                             dd invocation
+  atime:                                            File timestamps
+  atime, changing:                                  touch invocation
+  atime, printing or sorting files by:              Sorting the output
+  atime, show the most recent:                      du invocation
+  attributes, file:                                 Changing file attributes
+  authors of parse_datetime:                        Authors of parse_datetime
+  auto color option:                                General output formatting
+  auto hyperlink option:                            General output formatting
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+B
+  b for block special file:                         mknod invocation
+  b2sum:                                            b2sum invocation
+  background jobs, stopping at terminal write:      Local
+  backslash escapes:                                Character sets
+  backslash escapes:                                echo invocation
+  backslash escapes:                                echo invocation
+  backslash sequences for file names:               Formatting the file names
+  backup files, ignoring:                           Which files are listed
+  backup options:                                   Backup options
+  backup suffix:                                    Backup options
+  backups, making:                                  Backup options
+  backups, making:                                  cp invocation
+  backups, making:                                  install invocation
+  backups, making:                                  mv invocation
+  backups, making:                                  ln invocation
+  backups, making only:                             cp invocation
+  base32:                                           base32 invocation
+  base32 encoding:                                  base32 invocation
+  base64:                                           base64 invocation
+  Base64 decoding:                                  base64 invocation
+  base64 encoding:                                  base64 invocation
+  basename:                                         basename invocation
+  baud rate, setting:                               Special
+  beeping at input buffer full:                     Input
+  beginning of time:                                Time conversion specifiers
+  beginning of time, for POSIX:                     Seconds since the Epoch
+  Bellovin, Steven M.:                              Authors of parse_datetime
+  Berets, Jim:                                      Authors of parse_datetime
+  Berry, K.:                                        Introduction
+  Berry, K.:                                        Authors of parse_datetime
+  binary:                                           dd invocation
+  binary I/O:                                       dd invocation
+  binary input files:                               md5sum invocation
+  bind mount:                                       rm invocation
+  bind mount:                                       stat invocation
+  birthtime:                                        File timestamps
+  BLAKE2:                                           b2sum invocation
+  BLAKE2 hash length:                               b2sum invocation
+  blank:                                            Character sets
+  blank lines, numbering:                           nl invocation
+  blanks, ignoring leading:                         sort invocation
+  block (space-padding):                            dd invocation
+  block size:                                       Block size
+  block size:                                       dd invocation
+  block size of conversion:                         dd invocation
+  block size of input:                              dd invocation
+  block size of output:                             dd invocation
+  block special check:                              File type tests
+  block special files:                              mknod invocation
+  block special files, creating:                    mknod invocation
+  BLOCKSIZE:                                        Block size
+  BLOCK_SIZE:                                       Block size
+  body, numbering:                                  nl invocation
+  Bourne shell syntax for color setup:              dircolors invocation
+  breaks, cause interrupts:                         Input
+  breaks, ignoring:                                 Input
+  brkint:                                           Input
+  bs:                                               dd invocation
+  BSD output:                                       md5sum invocation
+  BSD sum:                                          sum invocation
+  BSD tail:                                         tail invocation
+  BSD touch compatibility:                          touch invocation
+  bsn:                                              Output
+  btrfs file system type:                           df invocation
+  bugs, reporting:                                  Introduction
+  built-in shell commands, conflicts with:          mknod invocation
+  built-in shell commands, conflicts with:          stat invocation
+  built-in shell commands, conflicts with:          echo invocation
+  built-in shell commands, conflicts with:          printf invocation
+  built-in shell commands, conflicts with:          test invocation
+  built-in shell commands, conflicts with:          pwd invocation
+  built-in shell commands, conflicts with:          nice invocation
+  built-in shell commands, conflicts with:          kill invocation
+  built-in shell commands, conflicts with:          sleep invocation
+  byte count:                                       wc invocation
+  byte-swapping:                                    od invocation
+  byte-swapping:                                    dd invocation
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+C
+  c for character special file:                     mknod invocation
+  C shell syntax for color setup:                   dircolors invocation
+  C-s/C-q flow control:                             Input
+  calendar date item:                               Calendar date items
+  calling combined multi-call program:              Multi-call invocation
+  canonical file name:                              readlink invocation
+  canonical file name:                              realpath invocation
+  canonicalize a file name:                         readlink invocation
+  canonicalize a file name:                         realpath invocation
+  case folding:                                     sort invocation
+  case translation:                                 Local
+  case, ignored in dates:                           General date syntax
+  cat:                                              cat invocation
+  cbreak:                                           Combination
+  cbs:                                              dd invocation
+  CD-ROM file system type:                          df invocation
+  cdfs file system type:                            df invocation
+  cdtrdsr:                                          Control
+  change or print terminal settings:                stty invocation
+  change SELinux context:                           chcon invocation
+  changed files, verbosely describing:              chgrp invocation
+  changed owners, verbosely describing:             chown invocation
+  changing access permissions:                      chmod invocation
+  changing file attributes:                         Changing file attributes
+  changing file ownership:                          chown invocation
+  changing file timestamps:                         touch invocation
+  changing group ownership:                         chown invocation
+  changing group ownership:                         chgrp invocation
+  changing security context:                        chcon invocation
+  changing special mode bits:                       Changing Special Mode Bits
+  character classes:                                Character sets
+  character count:                                  wc invocation
+  character size:                                   Control
+  character special check:                          File type tests
+  character special files:                          mknod invocation
+  character special files, creating:                mknod invocation
+  characters, special:                              Characters
+  chcon:                                            chcon invocation
+  check file types:                                 test invocation
+  checking for sortedness:                          sort invocation
+  checking for sortedness:                          sort invocation
+  checksum, 128-bit:                                md5sum invocation
+  checksum, 16-bit:                                 sum invocation
+  checksum, 160-bit:                                sha1sum invocation
+  checksum, 224-bit:                                sha2 utilities
+  checksum, 256-bit:                                sha2 utilities
+  checksum, 384-bit:                                sha2 utilities
+  checksum, 512-bit:                                b2sum invocation
+  checksum, 512-bit:                                sha2 utilities
+  chgrp:                                            chgrp invocation
+  chmod:                                            chmod invocation
+  chown:                                            chown invocation
+  chroot:                                           chroot invocation
+  cio:                                              dd invocation
+  cksum:                                            cksum invocation
+  clocal:                                           Control
+  clock skew:                                       Formatting file timestamps
+  clock skew:                                       File timestamps
+  clone:                                            cp invocation
+  cmspar:                                           Control
+  cntrl:                                            Character sets
+  color database, printing:                         dircolors invocation
+  color setup:                                      dircolors invocation
+  color, distinguishing file types with:            General output formatting
+  cols:                                             Special
+  column to wrap data after:                        base64 invocation
+  COLUMNS:                                          General output formatting
+  COLUMNS:                                          Special
+  columns:                                          Special
+  combination settings:                             Combination
+  combined:                                         Multi-call invocation
+  combined date and time of day item:               Combined date and time of
+                                                    day items
+  comm:                                             comm invocation
+  command-line operands to shuffle:                 shuf invocation
+  commands for controlling processes:               Process control
+  commands for delaying:                            Delaying
+  commands for exit status:                         Conditions
+  commands for file name manipulation:              File name manipulation
+  commands for invoking other commands:             Modified command invocation
+  commands for printing text:                       Printing text
+  commands for printing the working context:        Working context
+  commands for printing user information:           User information
+  commands for redirection:                         Redirection
+  commands for SELinux context:                     SELinux context
+  commands for system context:                      System context
+  commas, outputting between files:                 General output formatting
+  comments, in dates:                               General date syntax
+  common field, joining on:                         join invocation
+  common lines:                                     comm invocation
+  common options:                                   Common options
+  compare values:                                   test invocation
+  comparing sorted files:                           comm invocation
+  comparison operators:                             Relations for expr
+  concatenate and write files:                      cat invocation
+  concurrent I/O:                                   dd invocation
+  conditional executability:                        Conditional Executability
+  conditions:                                       Conditions
+  conflicts with shell built-ins:                   mknod invocation
+  conflicts with shell built-ins:                   stat invocation
+  conflicts with shell built-ins:                   echo invocation
+  conflicts with shell built-ins:                   printf invocation
+  conflicts with shell built-ins:                   test invocation
+  conflicts with shell built-ins:                   pwd invocation
+  conflicts with shell built-ins:                   nice invocation
+  conflicts with shell built-ins:                   kill invocation
+  conflicts with shell built-ins:                   sleep invocation
+  connectives, logical:                             Connectives for test
+  connectives, logical:                             Relations for expr
+  constant parity:                                  Control
+  context splitting:                                csplit invocation
+  context, system:                                  System context
+  control characters, using ‘^c’:                   Local
+  control settings:                                 Control
+  controlling terminal:                             dd invocation
+  conv:                                             dd invocation
+  conversion block size:                            dd invocation
+  conversion specifiers, date:                      Date conversion specifiers
+  conversion specifiers, literal:                   Literal conversion
+                                                    specifiers
+  conversion specifiers, time:                      Time conversion specifiers
+  converting tabs to spaces:                        expand invocation
+  converting while copying a file:                  dd invocation
+  cooked:                                           Combination
+  Coordinated Universal Time:                       Options for date
+  copy on write:                                    cp invocation
+  copying directories recursively:                  cp invocation
+  copying directories recursively:                  cp invocation
+  copying existing permissions:                     Copying Permissions
+  copying files:                                    cat invocation
+  copying files and directories:                    cp invocation
+  copying files and setting attributes:             install invocation
+  core utilities:                                   Top
+  count:                                            dd invocation
+  count_bytes:                                      dd invocation
+  COW:                                              cp invocation
+  cp:                                               cp invocation
+  crashes and corruption:                           sync invocation
+  CRC checksum:                                     cksum invocation
+  cread:                                            Control
+  creating directories:                             mkdir invocation
+  creating FIFOs (named pipes):                     mkfifo invocation
+  creating links (hard only):                       link invocation
+  creating links (hard or soft):                    ln invocation
+  creating output file, avoiding:                   dd invocation
+  creating output file, requiring:                  dd invocation
+  crn:                                              Output
+  crown margin:                                     fmt invocation
+  crt:                                              Combination
+  crterase:                                         Local
+  crtkill:                                          Local
+  crtscts:                                          Control
+  csh syntax for color setup:                       dircolors invocation
+  csn:                                              Control
+  csplit:                                           csplit invocation
+  cstopb:                                           Control
+  ctime:                                            File timestamps
+  ctime, printing or sorting by:                    Sorting the output
+  ctime, show the most recent:                      du invocation
+  ctlecho:                                          Local
+  current working directory, printing:              pwd invocation
+  cut:                                              cut invocation
+  cyclic redundancy check:                          cksum invocation
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+D
+  data, erasing:                                    shred invocation
+  database for color setup, printing:               dircolors invocation
+  date:                                             date invocation
+  date and time of day format, ISO 8601:            Combined date and time of
+                                                    day items
+  date conversion specifiers:                       Date conversion specifiers
+  date format, ISO 8601:                            Calendar date items
+  date input formats:                               Date input formats
+  date options:                                     Options for date
+  date strings, debugging:                          Options for date
+  date strings, parsing:                            Options for date
+  day in date strings:                              Relative items in date
+                                                    strings
+  day in date strings:                              Relative items in date
+                                                    strings
+  day of week item:                                 Day of week items
+  dd:                                               dd invocation
+  ddrescue:                                         dd invocation
+  debugging date strings:                           Options for date
+  debugging, env -S:                                env invocation
+  dec:                                              Combination
+  decctlq:                                          Combination
+  Decode base64 data:                               base64 invocation
+  delay for a specified time:                       sleep invocation
+  delaying commands:                                Delaying
+  deleting characters:                              Squeezing and deleting
+  dereferencing symbolic links:                     ln invocation
+  descriptor follow option:                         tail invocation
+  destination directory:                            Target directory
+  destination directory:                            Target directory
+  destination directory:                            cp invocation
+  destination directory:                            cp invocation
+  destination directory:                            install invocation
+  destination directory:                            install invocation
+  destination directory:                            mv invocation
+  destination directory:                            mv invocation
+  destination directory:                            ln invocation
+  destination directory:                            ln invocation
+  destinations, multiple output:                    tee invocation
+  device file, disk:                                df invocation
+  df:                                               df invocation
+  DF_BLOCK_SIZE:                                    Block size
+  diagnostic:                                       chcon invocation
+  dictionary order:                                 sort invocation
+  differing lines:                                  comm invocation
+  digit:                                            Character sets
+  dir:                                              dir invocation
+  dircolors:                                        dircolors invocation
+  direct:                                           dd invocation
+  direct I/O:                                       dd invocation
+  directories, copying:                             cp invocation
+  directories, copying recursively:                 cp invocation
+  directories, copying recursively:                 cp invocation
+  directories, creating:                            mkdir invocation
+  directories, creating with given attributes:      install invocation
+  directories, removing:                            rm invocation
+  directories, removing (recursively):              rm invocation
+  directories, removing empty:                      rmdir invocation
+  directory:                                        dd invocation
+  directory check:                                  File type tests
+  directory components, printing:                   dirname invocation
+  directory deletion, ignoring failures:            rmdir invocation
+  directory deletion, reporting:                    rmdir invocation
+  directory I/O:                                    dd invocation
+  directory listing:                                ls invocation
+  directory listing, brief:                         dir invocation
+  directory listing, recursive:                     Which files are listed
+  directory listing, verbose:                       vdir invocation
+  directory order, listing by:                      Sorting the output
+  directory, creating temporary:                    mktemp invocation
+  directory, stripping from file names:             basename invocation
+  dired Emacs mode support:                         What information is listed
+  dirname:                                          dirname invocation
+  disabling special characters:                     Characters
+  disambiguating group names and IDs:               Disambiguating names and
+                                                    IDs
+  discard:                                          Characters
+  discarding file cache:                            dd invocation
+  disk allocation:                                  What information is listed
+  disk device file:                                 df invocation
+  disk usage:                                       Disk usage
+  disk usage by file system:                        df invocation
+  disk usage for files:                             du invocation
+  disks, failing:                                   dd invocation
+  displacement of dates:                            Relative items in date
+                                                    strings
+  displaying text:                                  echo invocation
+  displaying value of a symbolic link:              readlink invocation
+  division:                                         Numeric expressions
+  do nothing, successfully:                         true invocation
+  do nothing, unsuccessfully:                       false invocation
+  DOS file system:                                  df invocation
+  double spacing:                                   pr invocation
+  down columns:                                     pr invocation
+  drain:                                            Special
+  dsusp:                                            Characters
+  dsync:                                            dd invocation
+  DTR/DSR flow control:                             Control
+  du:                                               du invocation
+  DU_BLOCK_SIZE:                                    Block size
+  DVD file system type:                             df invocation
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+E
+  ebcdic, converting to:                            dd invocation
+  echo:                                             echo invocation
+  echo:                                             Local
+  echoctl:                                          Local
+  echoe:                                            Local
+  echok:                                            Local
+  echoke:                                           Local
+  echonl:                                           Local
+  echoprt:                                          Local
+  effective user and group IDs, printing:           id invocation
+  effective user ID, printing:                      whoami invocation
+  Eggert, Paul:                                     Authors of parse_datetime
+  eight-bit characters:                             Control
+  eight-bit characters:                             Combination
+  eight-bit input:                                  Input
+  ek:                                               Combination
+  empty files, creating:                            touch invocation
+  empty lines, numbering:                           nl invocation
+  endianness:                                       od invocation
+  entire files, output of:                          Output of entire files
+  env:                                              env invocation
+  env -S, and single quotes:                        env invocation
+  env -S, debugging:                                env invocation
+  env in scripts:                                   env invocation
+  environment variables, printing:                  printenv invocation
+  environment, printing:                            env invocation
+  environment, running a program in a modified:     env invocation
+  eof:                                              Characters
+  eol:                                              Characters
+  eol2:                                             Characters
+  epoch, for POSIX:                                 Seconds since the Epoch
+  epoch, seconds since:                             Time conversion specifiers
+  equal string check:                               String tests
+  equal string check:                               String tests
+  equivalence classes:                              Character sets
+  erase:                                            Characters
+  erasing data:                                     shred invocation
+  error messages, omitting:                         chown invocation
+  error messages, omitting:                         chgrp invocation
+  error messages, omitting:                         chmod invocation
+  evaluation of expressions:                        expr invocation
+  even parity:                                      Control
+  evenp:                                            Combination
+  exabyte, definition of:                           Block size
+  examples of date:                                 Examples of date
+  examples of expr:                                 Examples of expr
+  exbibyte, definition of:                          Block size
+  excl:                                             dd invocation
+  excluding files from du:                          du invocation
+  excluding files from du:                          du invocation
+  executable file check:                            Access permission tests
+  executables and file type, marking:               General output formatting
+  execute/search permission:                        Mode Structure
+  execute/search permission, symbolic:              Setting Permissions
+  existence-of-file check:                          File characteristic tests
+  existing backup method:                           Backup options
+  exit status commands:                             Conditions
+  exit status of chroot:                            chroot invocation
+  exit status of env:                               env invocation
+  exit status of expr:                              expr invocation
+  exit status of false:                             false invocation
+  exit status of ls:                                ls invocation
+  exit status of mktemp:                            mktemp invocation
+  exit status of nice:                              nice invocation
+  exit status of nohup:                             nohup invocation
+  exit status of pathchk:                           pathchk invocation
+  exit status of printenv:                          printenv invocation
+  exit status of realpath:                          realpath invocation
+  exit status of runcon:                            runcon invocation
+  exit status of sort:                              sort invocation
+  exit status of stdbuf:                            stdbuf invocation
+  exit status of test:                              test invocation
+  exit status of timeout:                           timeout invocation
+  exit status of true:                              true invocation
+  exit status of tty:                               tty invocation
+  expand:                                           expand invocation
+  expr:                                             expr invocation
+  expression evaluation:                            test invocation
+  expression evaluation:                            expr invocation
+  expressions, numeric:                             Numeric expressions
+  expressions, string:                              String expressions
+  ext2 file system type:                            df invocation
+  ext3 file system type:                            df invocation
+  ext4 file system type:                            df invocation
+  extended attributes, xattr:                       install invocation
+  extended attributes, xattr:                       mv invocation
+  extension, sorting files by:                      Sorting the output
+  extproc:                                          Local
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+F
+  factor:                                           factor invocation
+  failure exit status:                              false invocation
+  false:                                            false invocation
+  fat file system file:                             df invocation
+  fdatasync:                                        dd invocation
+  ffn:                                              Output
+  field separator character:                        sort invocation
+  fields, padding numeric:                          Padding and other flags
+  FIFOs, creating:                                  mkfifo invocation
+  file attributes, changing:                        Changing file attributes
+  file characteristic tests:                        File characteristic tests
+  file contents, dumping unambiguously:             od invocation
+  file information, preserving:                     cp invocation
+  file information, preserving, extended            cp invocation
+  attributes, xattr:
+  file mode bits, numeric:                          Numeric Modes
+  file name manipulation:                           File name manipulation
+  file names, canonicalization:                     realpath invocation
+  file names, checking validity and portability:    pathchk invocation
+  file names, creating temporary:                   mktemp invocation
+  file names, stripping directory and suffix:       basename invocation
+  file offset radix:                                od invocation
+  file ownership, changing:                         chown invocation
+  file sizes:                                       du invocation
+  file space usage:                                 du invocation
+  file status:                                      stat invocation
+  file system disk usage:                           df invocation
+  file system sizes:                                df invocation
+  file system space, retrieving current data more   df invocation
+  slowly:
+  file system space, retrieving old data more       df invocation
+  quickly:
+  file system status:                               stat invocation
+  file system types, limiting output to certain:    df invocation
+  file system types, limiting output to certain:    df invocation
+  file system types, printing:                      df invocation
+  file systems:                                     stat invocation
+  file systems and hard links:                      ln invocation
+  file systems, omitting copying to different:      cp invocation
+  file timestamp resolution:                        File timestamps
+  file timestamps, changing:                        touch invocation
+  file type and executables, marking:               General output formatting
+  file type tests:                                  File type tests
+  file type, marking:                               General output formatting
+  file type, marking:                               General output formatting
+  file types:                                       Special file types
+  file types, special:                              Special file types
+  file utilities:                                   Top
+  files beginning with ‘-’, removing:               rm invocation
+  files, copying:                                   cp invocation
+  files, creating:                                  truncate invocation
+  fingerprint, 128-bit:                             md5sum invocation
+  fingerprint, 160-bit:                             sha1sum invocation
+  fingerprint, 224-bit:                             sha2 utilities
+  fingerprint, 256-bit:                             sha2 utilities
+  fingerprint, 384-bit:                             sha2 utilities
+  fingerprint, 512-bit:                             b2sum invocation
+  fingerprint, 512-bit:                             sha2 utilities
+  first in date strings:                            General date syntax
+  first part of files, outputting:                  head invocation
+  fixed-length records, converting to               dd invocation
+  variable-length:
+  floating point:                                   Floating point
+  flow control, hardware:                           Control
+  flow control, hardware:                           Control
+  flow control, software:                           Input
+  flush:                                            Characters
+  flushing, disabling:                              Local
+  flusho:                                           Local
+  fmt:                                              fmt invocation
+  fold:                                             fold invocation
+  folding long input lines:                         fold invocation
+  footers, numbering:                               nl invocation
+  force deletion:                                   shred invocation
+  formatting file contents:                         Formatting file contents
+  formatting of numbers in seq:                     seq invocation
+  formatting times:                                 pr invocation
+  formatting times:                                 date invocation
+  fortnight in date strings:                        Relative items in date
+                                                    strings
+  fsync:                                            dd invocation
+  fullblock:                                        dd invocation
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+G
+  general date syntax:                              General date syntax
+  general numeric sort:                             sort invocation
+  gibibyte, definition of:                          Block size
+  gigabyte, definition of:                          Block size
+  giving away permissions:                          Umask and Protection
+  GMT:                                              Options for date
+  grand total of disk size, usage and available     df invocation
+  space:
+  grand total of disk space:                        du invocation
+  graph:                                            Character sets
+  Greenwich Mean Time:                              Options for date
+  group IDs, disambiguating:                        Disambiguating names and
+                                                    IDs
+  group names, disambiguating:                      Disambiguating names and
+                                                    IDs
+  group owner, default:                             Mode Structure
+  group ownership of installed files, setting:      install invocation
+  group ownership, changing:                        chown invocation
+  group ownership, changing:                        chgrp invocation
+  group, permissions for:                           Setting Permissions
+  groups:                                           groups invocation
+  growing files:                                    tail invocation
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+H
+  hangups, immunity to:                             nohup invocation
+  hard link check:                                  File characteristic tests
+  hard link, defined:                               ln invocation
+  hard links:                                       dd invocation
+  hard links to directories:                        ln invocation
+  hard links to symbolic links:                     ln invocation
+  hard links, counting in du:                       du invocation
+  hard links, creating:                             link invocation
+  hard links, creating:                             ln invocation
+  hard links, preserving:                           cp invocation
+  hardware class:                                   uname invocation
+  hardware flow control:                            Control
+  hardware flow control:                            Control
+  hardware platform:                                uname invocation
+  hardware type:                                    uname invocation
+  hat notation for control characters:              Local
+  head:                                             head invocation
+  head of output:                                   shuf invocation
+  headers, numbering:                               nl invocation
+  help, online:                                     Common options
+  hex dump of files:                                od invocation
+  holes, copying files with:                        cp invocation
+  holes, creating files with:                       truncate invocation
+  horizontal, listing files:                        General output formatting
+  host processor type:                              uname invocation
+  hostid:                                           hostid invocation
+  hostname:                                         hostname invocation
+  hostname:                                         uname invocation
+  hour in date strings:                             Relative items in date
+                                                    strings
+  human numeric sort:                               sort invocation
+  human-readable output:                            Block size
+  human-readable output:                            What information is listed
+  human-readable output:                            df invocation
+  human-readable output:                            du invocation
+  hup[cl]:                                          Control
+  hurd, author, printing:                           What information is listed
+  hyperlink, linking to files:                      General output formatting
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+I
+  ibs:                                              dd invocation
+  icanon:                                           Local
+  icrnl:                                            Input
+  id:                                               id invocation
+  idle time:                                        who invocation
+  IEEE floating point:                              Floating point
+  iexten:                                           Local
+  if:                                               dd invocation
+  iflag:                                            dd invocation
+  ignbrk:                                           Input
+  igncr:                                            Input
+  ignore file systems:                              df invocation
+  Ignore garbage in base64 stream:                  base64 invocation
+  ignoring case:                                    sort invocation
+  ignpar:                                           Input
+  imaxbel:                                          Input
+  immunity to hangups:                              nohup invocation
+  implementation, hardware:                         uname invocation
+  indenting lines:                                  pr invocation
+  index:                                            String expressions
+  information, about current users:                 who invocation
+  initial part of files, outputting:                head invocation
+  initial tabs, converting:                         expand invocation
+  inlcr:                                            Input
+  inode number, printing:                           What information is listed
+  inode usage:                                      df invocation
+  inode usage, dereferencing in du:                 du invocation
+  inode, and hard links:                            ln invocation
+  inodes, written buffered:                         sync invocation
+  inpck:                                            Input
+  input block size:                                 dd invocation
+  input encoding, UTF-8:                            Input
+  input range to shuffle:                           shuf invocation
+  input settings:                                   Input
+  input tabs:                                       pr invocation
+  install:                                          install invocation
+  intr:                                             Characters
+  invocation of commands, modified:                 Modified command invocation
+  isig:                                             Local
+  ISO 8601 date and time of day format:             Combined date and time of
+                                                    day items
+  ISO 8601 date format:                             Calendar date items
+  ISO/IEC 10646:                                    printf invocation
+  ISO9660 file system type:                         df invocation
+  iso9660 file system type:                         df invocation
+  ispeed:                                           Special
+  istrip:                                           Input
+  items in date strings:                            General date syntax
+  iterations, selecting the number of:              shred invocation
+  iuclc:                                            Input
+  iutf8:                                            Input
+  ixany:                                            Input
+  ixoff:                                            Input
+  ixon:                                             Input
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+J
+  join:                                             join invocation
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+K
+  kernel name:                                      uname invocation
+  kernel release:                                   uname invocation
+  kernel version:                                   uname invocation
+  kibibyte, definition of:                          Block size
+  kibibytes for file sizes:                         du invocation
+  kibibytes for file system sizes:                  df invocation
+  kill:                                             kill invocation
+  kill:                                             Characters
+  kilobyte, definition of:                          Block size
+  Knuth, Donald E.:                                 fmt invocation
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+L
+  language, in dates:                               General date syntax
+  language, in dates:                               General date syntax
+  last day:                                         Day of week items
+  last day:                                         Options for date
+  last in date strings:                             General date syntax
+  last modified dates, displaying in du:            du invocation
+  last part of files, outputting:                   tail invocation
+  lcase:                                            Combination
+  LCASE:                                            Combination
+  lcase, converting to:                             dd invocation
+  lchown:                                           chown invocation
+  lchown:                                           chown invocation
+  lchown:                                           chgrp invocation
+  lchown:                                           chgrp invocation
+  LC_ALL:                                           sort invocation
+  LC_ALL:                                           ls invocation
+  LC_COLLATE:                                       sort invocation
+  LC_COLLATE:                                       uniq invocation
+  LC_COLLATE:                                       comm invocation
+  LC_COLLATE:                                       Sorting files for join
+  LC_COLLATE:                                       Relations for expr
+  LC_CTYPE:                                         sort invocation
+  LC_CTYPE:                                         sort invocation
+  LC_CTYPE:                                         sort invocation
+  LC_CTYPE:                                         sort invocation
+  LC_CTYPE:                                         printf invocation
+  LC_MESSAGES:                                      pr invocation
+  LC_NUMERIC:                                       Block size
+  LC_NUMERIC:                                       Floating point
+  LC_NUMERIC:                                       sort invocation
+  LC_NUMERIC:                                       sort invocation
+  LC_NUMERIC:                                       sort invocation
+  LC_NUMERIC:                                       printf invocation
+  LC_TIME:                                          pr invocation
+  LC_TIME:                                          sort invocation
+  LC_TIME:                                          Formatting file timestamps
+  LC_TIME:                                          Formatting file timestamps
+  LC_TIME:                                          Formatting file timestamps
+  LC_TIME:                                          du invocation
+  LC_TIME:                                          date invocation
+  leading directories, creating missing:            install invocation
+  leading directory components, stripping:          basename invocation
+  leap seconds:                                     touch invocation
+  leap seconds:                                     Time conversion specifiers
+  leap seconds:                                     Time conversion specifiers
+  leap seconds:                                     Options for date
+  leap seconds:                                     Examples of date
+  leap seconds:                                     General date syntax
+  leap seconds:                                     Time of day items
+  leap seconds:                                     Seconds since the Epoch
+  left margin:                                      pr invocation
+  length:                                           String expressions
+  limiting output of du:                            du invocation
+  line:                                             Special
+  line buffered:                                    stdbuf invocation
+  line count:                                       wc invocation
+  line numbering:                                   nl invocation
+  line separator character:                         split invocation
+  line settings of terminal:                        stty invocation
+  line-breaking:                                    fmt invocation
+  line-by-line comparison:                          comm invocation
+  LINES:                                            Special
+  link:                                             link invocation
+  links, creating:                                  link invocation
+  links, creating:                                  ln invocation
+  Linux file system types:                          df invocation
+  literal conversion specifiers:                    Literal conversion
+                                                    specifiers
+  litout:                                           Combination
+  ln:                                               ln invocation
+  ln format for nl:                                 nl invocation
+  lnext:                                            Characters
+  local file system types:                          df invocation
+  local settings:                                   Local
+  logging out and continuing to run:                nohup invocation
+  logical and operator:                             Connectives for test
+  logical and operator:                             Relations for expr
+  logical connectives:                              Connectives for test
+  logical connectives:                              Relations for expr
+  logical or operator:                              Connectives for test
+  logical or operator:                              Relations for expr
+  logical pages, numbering on:                      nl invocation
+  login name, printing:                             logname invocation
+  login sessions, printing users with:              users invocation
+  login time:                                       who invocation
+  logname:                                          logname invocation
+  long ls format:                                   What information is listed
+  lower:                                            Character sets
+  lowercase, translating to output:                 Output
+  ls:                                               ls invocation
+  LS_BLOCK_SIZE:                                    Block size
+  LS_COLORS:                                        General output formatting
+  LS_COLORS:                                        dircolors invocation
+  lutimes:                                          touch invocation
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+M
+  machine type:                                     uname invocation
+  machine-readable stty output:                     stty invocation
+  MacKenzie, D.:                                    Introduction
+  MacKenzie, David:                                 Authors of parse_datetime
+  Makefiles, installing programs in:                install invocation
+  manipulating files:                               Basic operations
+  manipulation of file names:                       File name manipulation
+  mark parity:                                      Control
+  match:                                            String expressions
+  matching patterns:                                String expressions
+  MD5:                                              md5sum invocation
+  md5sum:                                           md5sum invocation
+  mebibyte, definition of:                          Block size
+  mebibytes for file sizes:                         du invocation
+  megabyte, definition of:                          Block size
+  merging files:                                    paste invocation
+  merging files in parallel:                        pr invocation
+  merging sorted files:                             sort invocation
+  message status:                                   who invocation
+  message-digest, 128-bit:                          md5sum invocation
+  message-digest, 160-bit:                          sha1sum invocation
+  message-digest, 224-bit:                          sha2 utilities
+  message-digest, 256-bit:                          sha2 utilities
+  message-digest, 384-bit:                          sha2 utilities
+  message-digest, 512-bit:                          b2sum invocation
+  message-digest, 512-bit:                          sha2 utilities
+  Meyering, J.:                                     Introduction
+  Meyering, Jim:                                    Authors of parse_datetime
+  midnight in date strings:                         Time of day items
+  min:                                              Special
+  minute in date strings:                           Relative items in date
+                                                    strings
+  minutes, time zone correction by:                 Time of day items
+  mkdir:                                            mkdir invocation
+  mkfifo:                                           mkfifo invocation
+  mknod:                                            mknod invocation
+  mktemp:                                           mktemp invocation
+  modem control:                                    Control
+  modes and umask:                                  Umask and Protection
+  modes of created directories, setting:            mkdir invocation
+  modes of created FIFOs, setting:                  mkfifo invocation
+  modification timestamp, sorting files by:         Sorting the output
+  modified command invocation:                      Modified command invocation
+  modified environment, running a program in a:     env invocation
+  modify time, changing:                            touch invocation
+  month in date strings:                            Relative items in date
+                                                    strings
+  month names in date strings:                      Calendar date items
+  months, sorting by:                               sort invocation
+  months, written-out:                              General date syntax
+  MS-DOS file system:                               df invocation
+  MS-Windows file system:                           df invocation
+  mtime:                                            File timestamps
+  mtime, changing:                                  touch invocation
+  multicall:                                        Multi-call invocation
+  multicolumn output, generating:                   pr invocation
+  multiple changes to permissions:                  Multiple Changes
+  multiplication:                                   Numeric expressions
+  multipliers after numbers:                        dd invocation
+  multithreaded sort:                               sort invocation
+  mv:                                               mv invocation
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+N
+  name follow option:                               tail invocation
+  name of kernel:                                   uname invocation
+  named pipe check:                                 File type tests
+  named pipes, creating:                            mkfifo invocation
+  network node name:                                uname invocation
+  never interactive option:                         rm invocation
+  newer files, copying only:                        cp invocation
+  newer files, moving only:                         mv invocation
+  newer-than file check:                            File characteristic tests
+  newline echoing after kill:                       Local
+  newline, echoing:                                 Local
+  newline, translating to crlf:                     Output
+  newline, translating to return:                   Input
+  next day:                                         Day of week items
+  next day:                                         Options for date
+  next in date strings:                             General date syntax
+  NFS file system type:                             df invocation
+  NFS mounts from BSD to HP-UX:                     What information is listed
+  NFS mounts from BSD to HP-UX:                     du invocation
+  nice:                                             nice invocation
+  niceness:                                         nice invocation
+  nl:                                               nl invocation
+  nl:                                               Combination
+  nln:                                              Output
+  no dereference:                                   chcon invocation
+  no-op:                                            true invocation
+  noatime:                                          dd invocation
+  nocache:                                          dd invocation
+  nocreat:                                          dd invocation
+  noctty:                                           dd invocation
+  node name:                                        uname invocation
+  noerror:                                          dd invocation
+  noflsh:                                           Local
+  nofollow:                                         dd invocation
+  nohup:                                            nohup invocation
+  nohup.out:                                        nohup invocation
+  nohup.out:                                        nohup invocation
+  nolinks:                                          dd invocation
+  non-directories, copying as special files:        cp invocation
+  non-directories, copying as special files:        cp invocation
+  non-directory suffix, stripping:                  dirname invocation
+  nonblock:                                         dd invocation
+  nonblocking I/O:                                  dd invocation
+  nonblocking stty setting:                         Special
+  none backup method:                               Backup options
+  none color option:                                General output formatting
+  none dd status=:                                  dd invocation
+  none hyperlink option:                            General output formatting
+  none, sorting option for ls:                      Sorting the output
+  nonempty file check:                              File characteristic tests
+  nonprinting characters, ignoring:                 sort invocation
+  nonzero-length string check:                      String tests
+  noon in date strings:                             Time of day items
+  not-equal string check:                           String tests
+  notrunc:                                          dd invocation
+  now in date strings:                              Relative items in date
+                                                    strings
+  noxfer dd status=:                                dd invocation
+  NO_NEW_PRIVS:                                     runcon invocation
+  nproc:                                            nproc invocation
+  NTFS file system:                                 df invocation
+  ntfs file system file:                            df invocation
+  number of inputs to merge, nmerge:                sort invocation
+  numbered backup method:                           Backup options
+  numbering lines:                                  nl invocation
+  numbers, written-out:                             General date syntax
+  numeric expressions:                              Numeric expressions
+  numeric field padding:                            Padding and other flags
+  numeric modes:                                    Numeric Modes
+  numeric operations:                               Numeric operations
+  numeric sequences:                                seq invocation
+  numeric sort:                                     sort invocation
+  numeric tests:                                    Numeric tests
+  numeric uid and gid:                              What information is listed
+  numeric user and group IDs:                       What information is listed
+  numfmt:                                           numfmt invocation
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+O
+  obs:                                              dd invocation
+  ocrnl:                                            Output
+  octal dump of files:                              od invocation
+  octal numbers for file modes:                     Numeric Modes
+  od:                                               od invocation
+  odd parity:                                       Control
+  oddp:                                             Combination
+  of:                                               dd invocation
+  ofdel:                                            Output
+  ofill:                                            Output
+  oflag:                                            dd invocation
+  olcuc:                                            Output
+  older-than file check:                            File characteristic tests
+  once interactive option:                          rm invocation
+  one file system, restricting du to:               du invocation
+  one file system, restricting rm to:               rm invocation
+  one-line output format:                           df invocation
+  onlcr:                                            Output
+  onlret:                                           Output
+  onocr:                                            Output
+  operating on characters:                          Operating on characters
+  operating on sorted files:                        Operating on sorted files
+  operating system name:                            uname invocation
+  opost:                                            Output
+  option delimiter:                                 Common options
+  options for date:                                 Options for date
+  or operator:                                      Connectives for test
+  or operator:                                      Relations for expr
+  ordinal numbers:                                  General date syntax
+  ospeed:                                           Special
+  other permissions:                                Setting Permissions
+  output block size:                                dd invocation
+  output file name prefix:                          split invocation
+  output file name prefix:                          csplit invocation
+  output file name suffix:                          csplit invocation
+  output format:                                    stat invocation
+  output format:                                    stat invocation
+  output format, portable:                          df invocation
+  output NUL-byte-terminated lines:                 md5sum invocation
+  output NUL-byte-terminated lines:                 readlink invocation
+  output NUL-byte-terminated lines:                 du invocation
+  output NUL-byte-terminated lines:                 basename invocation
+  output NUL-byte-terminated lines:                 dirname invocation
+  output NUL-byte-terminated lines:                 realpath invocation
+  output NUL-byte-terminated lines:                 printenv invocation
+  output NUL-byte-terminated lines:                 env invocation
+  output of entire files:                           Output of entire files
+  output of parts of files:                         Output of parts of files
+  output settings:                                  Output
+  output tabs:                                      pr invocation
+  overwriting of input, allowed:                    sort invocation
+  overwriting of input, allowed:                    shuf invocation
+  owned by effective group ID check:                Access permission tests
+  owned by effective user ID check:                 Access permission tests
+  owner of file, permissions for:                   Setting Permissions
+  owner, default:                                   Mode Structure
+  ownership of installed files, setting:            install invocation
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+P
+  p for FIFO file:                                  mknod invocation
+  pad character:                                    Output
+  pad instead of timing for delaying:               Output
+  padding of numeric fields:                        Padding and other flags
+  paragraphs, reformatting:                         fmt invocation
+  parenb:                                           Control
+  parent directories and cp:                        cp invocation
+  parent directories, creating:                     mkdir invocation
+  parent directories, creating missing:             install invocation
+  parent directories, removing:                     rmdir invocation
+  parentheses for grouping:                         expr invocation
+  parity:                                           Combination
+  parity errors, marking:                           Input
+  parity, ignoring:                                 Input
+  parmrk:                                           Input
+  parodd:                                           Control
+  parse_datetime:                                   Date input formats
+  parsing date strings:                             Options for date
+  parts of files, output of:                        Output of parts of files
+  pass8:                                            Combination
+  paste:                                            paste invocation
+  Paterson, R.:                                     Introduction
+  PATH:                                             env invocation
+  pathchk:                                          pathchk invocation
+  pattern matching:                                 String expressions
+  pebibyte, definition of:                          Block size
+  permission tests:                                 Access permission tests
+  permissions of installed files, setting:          install invocation
+  permissions, changing access:                     chmod invocation
+  permissions, copying existing:                    Copying Permissions
+  permissions, for changing file timestamps:        touch invocation
+  permissions, output by ls:                        What information is listed
+  petabyte, definition of:                          Block size
+  phone directory order:                            sort invocation
+  pieces, splitting a file into:                    split invocation
+  Pinard, F.:                                       Introduction
+  Pinard, F.:                                       Authors of parse_datetime
+  pipe fitting:                                     tee invocation
+  Plass, Michael F.:                                fmt invocation
+  platform, hardware:                               uname invocation
+  pm in date strings:                               Time of day items
+  portable file names, checking for:                pathchk invocation
+  portable output format:                           df invocation
+  POSIX:                                            Introduction
+  POSIX output format:                              df invocation
+  POSIXLY_CORRECT:                                  Common options
+  POSIXLY_CORRECT:                                  Standards conformance
+  POSIXLY_CORRECT:                                  pr invocation
+  POSIXLY_CORRECT:                                  sort invocation
+  POSIXLY_CORRECT:                                  sort invocation
+  POSIXLY_CORRECT:                                  dd invocation
+  POSIXLY_CORRECT:                                  echo invocation
+  POSIXLY_CORRECT:                                  printf invocation
+  POSIXLY_CORRECT:                                  id invocation
+  POSIXLY_CORRECT, and block size:                  Block size
+  pr:                                               pr invocation
+  prime factors:                                    factor invocation
+  print:                                            Character sets
+  print machine hardware name:                      arch invocation
+  print name of current directory:                  pwd invocation
+  print system information:                         uname invocation
+  print terminal file name:                         tty invocation
+  Print the number of processors:                   nproc invocation
+  printenv:                                         printenv invocation
+  printf:                                           printf invocation
+  printing all or some environment variables:       printenv invocation
+  printing color database:                          dircolors invocation
+  printing current user information:                who invocation
+  printing current usernames:                       users invocation
+  printing groups a user is in:                     groups invocation
+  printing real and effective user and group IDs:   id invocation
+  printing text:                                    echo invocation
+  printing text, commands for:                      Printing text
+  printing the current time:                        date invocation
+  printing the effective user ID:                   whoami invocation
+  printing the host identifier:                     hostid invocation
+  printing the hostname:                            hostname invocation
+  printing the system uptime and load:              uptime invocation
+  printing user’s login name:                       logname invocation
+  printing, preparing files for:                    pr invocation
+  process zero-terminated items:                    head invocation
+  process zero-terminated items:                    tail invocation
+  process zero-terminated items:                    sort invocation
+  process zero-terminated items:                    shuf invocation
+  process zero-terminated items:                    uniq invocation
+  process zero-terminated items:                    comm invocation
+  process zero-terminated items:                    cut invocation
+  process zero-terminated items:                    paste invocation
+  process zero-terminated items:                    General options in join
+  process zero-terminated items:                    numfmt invocation
+  processes, commands for controlling:              Process control
+  progress dd status=:                              dd invocation
+  prompting, and ln:                                ln invocation
+  prompting, and mv:                                mv invocation
+  prompting, and rm:                                rm invocation
+  prompts, forcing:                                 mv invocation
+  prompts, omitting:                                mv invocation
+  prompts, omitting:                                mv invocation
+  prterase:                                         Local
+  ptx:                                              ptx invocation
+  punct:                                            Character sets
+  pure numbers in date strings:                     Pure numbers in date
+                                                    strings
+  pwd:                                              pwd invocation
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Q
+  quit:                                             Characters
+  quoting style:                                    Formatting the file names
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+R
+  radix for file offsets:                           od invocation
+  random seed:                                      Random sources
+  random sort:                                      sort invocation
+  random source for shredding:                      shred invocation
+  random source for shuffling:                      shuf invocation
+  random source for sorting:                        sort invocation
+  random sources:                                   Random sources
+  ranges:                                           Character sets
+  raw:                                              Combination
+  read errors, ignoring:                            dd invocation
+  read from stdin and write to stdout and files:    tee invocation
+  read permission:                                  Mode Structure
+  read permission, symbolic:                        Setting Permissions
+  read system call, and holes:                      cp invocation
+  readable file check:                              Access permission tests
+  readlink:                                         readlink invocation
+  real user and group IDs, printing:                id invocation
+  realpath:                                         realpath invocation
+  realpath:                                         realpath invocation
+  realpath:                                         realpath invocation
+  realpath:                                         readlink invocation
+  record separator character:                       split invocation
+  recursive directory listing:                      Which files are listed
+  recursively changing access permissions:          chmod invocation
+  recursively changing file ownership:              chown invocation
+  recursively changing group ownership:             chgrp invocation
+  recursively copying directories:                  cp invocation
+  recursively copying directories:                  cp invocation
+  redirection:                                      Redirection
+  reference file:                                   chcon invocation
+  reformatting paragraph text:                      fmt invocation
+  regular expression matching:                      String expressions
+  regular file check:                               File type tests
+  relations, numeric or string:                     Relations for expr
+  relative items in date strings:                   Relative items in date
+                                                    strings
+  release of kernel:                                uname invocation
+  relpath:                                          realpath invocation
+  remainder:                                        Numeric expressions
+  remote hostname:                                  who invocation
+  removing characters:                              Squeezing and deleting
+  removing empty directories:                       rmdir invocation
+  removing files after shredding:                   shred invocation
+  removing files or directories:                    rm invocation
+  removing files or directories (via the unlink     unlink invocation
+  syscall):
+  removing permissions:                             Setting Permissions
+  repeat output values:                             shuf invocation
+  repeated characters:                              Character sets
+  repeated lines, outputting:                       uniq invocation
+  repeated output of a string:                      yes invocation
+  restricted deletion flag:                         Mode Structure
+  restricted security context:                      runcon invocation
+  return, ignoring:                                 Input
+  return, translating to newline:                   Input
+  return, translating to newline:                   Output
+  reverse sorting:                                  sort invocation
+  reverse sorting:                                  Sorting the output
+  reversing files:                                  tac invocation
+  rm:                                               rm invocation
+  rmdir:                                            rmdir invocation
+  rn format for nl:                                 nl invocation
+  root as default owner:                            install invocation
+  root directory, allow recursive destruction:      rm invocation
+  root directory, allow recursive modification:     chown invocation
+  root directory, allow recursive modification:     chgrp invocation
+  root directory, allow recursive modification:     chmod invocation
+  root directory, disallow recursive destruction:   rm invocation
+  root directory, disallow recursive modification   chown invocation
+  :
+  root directory, disallow recursive modification   chgrp invocation
+  :
+  root directory, disallow recursive modification   chmod invocation
+  :
+  root directory, running a program in a            chroot invocation
+  specified:
+  rows:                                             Special
+  rprnt:                                            Characters
+  RTS/CTS flow control:                             Control
+  run commands with bounded time:                   timeout invocation
+  run with security context:                        runcon invocation
+  runcon:                                           runcon invocation
+  running a program in a modified environment:      env invocation
+  running a program in a specified root directory   chroot invocation
+  :
+  rz format for nl:                                 nl invocation
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+S
+  Salz, Rich:                                       Authors of parse_datetime
+  same file check:                                  File characteristic tests
+  sane:                                             Combination
+  scheduling, affecting:                            nice invocation
+  screen columns:                                   fold invocation
+  scripts arguments:                                env invocation
+  seconds since the epoch:                          Time conversion specifiers
+  section delimiters of pages:                      nl invocation
+  security context:                                 What information is listed
+  security context:                                 cp invocation
+  security context:                                 install invocation
+  security context:                                 install invocation
+  security context:                                 mv invocation
+  security context:                                 mkdir invocation
+  security context:                                 mkfifo invocation
+  security context:                                 mknod invocation
+  security context:                                 id invocation
+  seek:                                             dd invocation
+  seek_bytes:                                       dd invocation
+  self-backups:                                     cp invocation
+  SELinux:                                          What information is listed
+  SELinux:                                          install invocation
+  SELinux:                                          id invocation
+  SELinux context:                                  SELinux context
+  SELinux, context:                                 SELinux context
+  SELinux, restoring security context:              mv invocation
+  SELinux, setting/restoring security context:      cp invocation
+  SELinux, setting/restoring security context:      install invocation
+  SELinux, setting/restoring security context:      mkdir invocation
+  SELinux, setting/restoring security context:      mkfifo invocation
+  SELinux, setting/restoring security context:      mknod invocation
+  send a signal to processes:                       kill invocation
+  sentences and line-breaking:                      fmt invocation
+  separator for numbers in seq:                     seq invocation
+  seq:                                              seq invocation
+  sequence of numbers:                              seq invocation
+  set-group-ID:                                     Mode Structure
+  set-group-ID check:                               Access permission tests
+  set-user-ID:                                      Mode Structure
+  set-user-ID check:                                Access permission tests
+  setgid:                                           Mode Structure
+  setting permissions:                              Setting Permissions
+  setting the hostname:                             hostname invocation
+  setting the time:                                 Setting the time
+  setuid:                                           Mode Structure
+  setup for color:                                  dircolors invocation
+  sh syntax for color setup:                        dircolors invocation
+  SHA-1:                                            sha1sum invocation
+  SHA-2:                                            sha2 utilities
+  sha1sum:                                          sha1sum invocation
+  sha224sum:                                        sha2 utilities
+  sha256sum:                                        sha2 utilities
+  sha384sum:                                        sha2 utilities
+  sha512sum:                                        sha2 utilities
+  shebang arguments:                                env invocation
+  SHELL environment variable, and color:            General output formatting
+  SHELL environment variable, and color:            dircolors invocation
+  shell utilities:                                  Top
+  shred:                                            shred invocation
+  shuf:                                             shuf invocation
+  shuffling files:                                  shuf invocation
+  SI output:                                        Block size
+  SI output:                                        What information is listed
+  SI output:                                        df invocation
+  SI output:                                        du invocation
+  signals, specifying:                              Signal specifications
+  simple backup method:                             Backup options
+  SIMPLE_BACKUP_SUFFIX:                             Backup options
+  single quotes, and env -S:                        env invocation
+  single-column output of files:                    General output formatting
+  size:                                             Special
+  size for main memory sorting:                     sort invocation
+  size of file to shred:                            shred invocation
+  size of files, reporting:                         What information is listed
+  size of files, sorting files by:                  Sorting the output
+  skip:                                             dd invocation
+  skip_bytes:                                       dd invocation
+  sleep:                                            sleep invocation
+  socket check:                                     File type tests
+  software flow control:                            Input
+  sort:                                             sort invocation
+  sort field:                                       sort invocation
+  sort stability:                                   sort invocation
+  sort stability:                                   sort invocation
+  sort’s last-resort comparison:                    sort invocation
+  sort’s last-resort comparison:                    sort invocation
+  sorted files, operations on:                      Operating on sorted files
+  sorting files:                                    sort invocation
+  sorting ls output:                                Sorting the output
+  space:                                            Character sets
+  space parity:                                     Control
+  sparse:                                           dd invocation
+  sparse files, copying:                            cp invocation
+  sparse files, creating:                           truncate invocation
+  special characters:                               Characters
+  special file types:                               Special file types
+  special file types:                               Special file types
+  special files:                                    mknod invocation
+  special settings:                                 Special
+  specifying sets of characters:                    Character sets
+  speed:                                            Special
+  split:                                            split invocation
+  splitting a file into pieces:                     split invocation
+  splitting a file into pieces by context:          csplit invocation
+  squeezing blank lines:                            cat invocation
+  squeezing empty lines:                            cat invocation
+  squeezing repeat characters:                      Squeezing and deleting
+  Stallman, R.:                                     Introduction
+  standard input:                                   Common options
+  standard output:                                  Common options
+  standard streams, buffering:                      stdbuf invocation
+  start:                                            Characters
+  stat:                                             stat invocation
+  status:                                           dd invocation
+  status:                                           Characters
+  status time, printing or sorting by:              Sorting the output
+  status time, show the most recent:                du invocation
+  stdbuf:                                           stdbuf invocation
+  stick parity:                                     Control
+  sticky:                                           Mode Structure
+  sticky bit check:                                 Access permission tests
+  stop:                                             Characters
+  stop bits:                                        Control
+  strftime and date:                                date invocation
+  string constants, outputting:                     od invocation
+  string expressions:                               String expressions
+  string tests:                                     String tests
+  strip directory and suffix from file names:       basename invocation
+  stripping non-directory suffix:                   dirname invocation
+  stripping symbol table information:               install invocation
+  stripping trailing slashes:                       cp invocation
+  stripping trailing slashes:                       mv invocation
+  stty:                                             stty invocation
+  substr:                                           String expressions
+  subtracting permissions:                          Setting Permissions
+  subtraction:                                      Numeric expressions
+  successful exit:                                  true invocation
+  suffix, stripping from file names:                basename invocation
+  sum:                                              sum invocation
+  summarizing files:                                Summarizing files
+  superblock, writing:                              sync invocation
+  supplementary groups, printing:                   groups invocation
+  susp:                                             Characters
+  swab (byte-swapping):                             dd invocation
+  swap space, saving text image in:                 Mode Structure
+  swtch:                                            Characters
+  symbol table information, stripping:              install invocation
+  symbol table information, stripping, program:     install invocation
+  symbolic (soft) links, creating:                  ln invocation
+  symbolic link check:                              File type tests
+  symbolic link to directory, controlling           Traversing symlinks
+  traversal of:
+  symbolic link to directory, never traverse:       Traversing symlinks
+  symbolic link to directory, never traverse:       chown invocation
+  symbolic link to directory, never traverse:       chgrp invocation
+  symbolic link to directory, never traverse:       chcon invocation
+  symbolic link to directory, traverse each that    Traversing symlinks
+  is encountered:
+  symbolic link to directory, traverse each that    chown invocation
+  is encountered:
+  symbolic link to directory, traverse each that    chgrp invocation
+  is encountered:
+  symbolic link to directory, traverse each that    chcon invocation
+  is encountered:
+  symbolic link to directory, traverse if on the    Traversing symlinks
+  command line:
+  symbolic link to directory, traverse if on the    chown invocation
+  command line:
+  symbolic link to directory, traverse if on the    chgrp invocation
+  command line:
+  symbolic link to directory, traverse if on the    chcon invocation
+  command line:
+  symbolic link, defined:                           ln invocation
+  symbolic links and ln:                            ln invocation
+  symbolic links and pwd:                           pwd invocation
+  symbolic links, changing group:                   chgrp invocation
+  symbolic links, changing owner:                   chown invocation
+  symbolic links, changing owner:                   chown invocation
+  symbolic links, changing owner:                   chown invocation
+  symbolic links, changing owner:                   chgrp invocation
+  symbolic links, changing time:                    touch invocation
+  symbolic links, copying:                          cp invocation
+  symbolic links, copying:                          cp invocation
+  symbolic links, copying with:                     cp invocation
+  symbolic links, dereferencing:                    Which files are listed
+  symbolic links, dereferencing:                    Which files are listed
+  symbolic links, dereferencing:                    Which files are listed
+  symbolic links, dereferencing in du:              du invocation
+  symbolic links, dereferencing in du:              du invocation
+  symbolic links, dereferencing in stat:            stat invocation
+  symbolic links, following:                        dd invocation
+  symbolic links, permissions of:                   chmod invocation
+  symbolic modes:                                   Symbolic Modes
+  symlinks, resolution:                             realpath invocation
+  sync:                                             sync invocation
+  sync:                                             dd invocation
+  sync (padding with ASCII NULs):                   dd invocation
+  Synchronize cached writes to persistent storage   sync invocation
+  :
+  synchronize disk and memory:                      sync invocation
+  synchronized data and metadata I/O:               dd invocation
+  synchronized data and metadata writes, before     dd invocation
+  finishing:
+  synchronized data reads:                          dd invocation
+  synchronized data writes, before finishing:       dd invocation
+  system context:                                   System context
+  system information, printing:                     arch invocation
+  system information, printing:                     nproc invocation
+  system information, printing:                     uname invocation
+  system name, printing:                            hostname invocation
+  System V sum:                                     sum invocation
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+T
+  tab stops, setting:                               expand invocation
+  tabn:                                             Output
+  tabs:                                             Combination
+  tabs to spaces, converting:                       expand invocation
+  tac:                                              tac invocation
+  tagged paragraphs:                                fmt invocation
+  tail:                                             tail invocation
+  tandem:                                           Input
+  target directory:                                 Target directory
+  target directory:                                 Target directory
+  target directory:                                 Target directory
+  target directory:                                 cp invocation
+  target directory:                                 cp invocation
+  target directory:                                 install invocation
+  target directory:                                 install invocation
+  target directory:                                 mv invocation
+  target directory:                                 mv invocation
+  target directory:                                 ln invocation
+  target directory:                                 ln invocation
+  tebibyte, definition of:                          Block size
+  tee:                                              tee invocation
+  telephone directory order:                        sort invocation
+  temporary directory:                              sort invocation
+  temporary files and directories:                  mktemp invocation
+  terabyte, definition of:                          Block size
+  terminal check:                                   File type tests
+  terminal file name, printing:                     tty invocation
+  terminal lines, currently used:                   who invocation
+  terminal settings:                                stty invocation
+  terminal, using color iff:                        General output formatting
+  terminal, using hyperlink iff:                    General output formatting
+  terse output:                                     stat invocation
+  test:                                             test invocation
+  text:                                             dd invocation
+  text I/O:                                         dd invocation
+  text image, saving in swap space:                 Mode Structure
+  text input files:                                 md5sum invocation
+  text utilities:                                   Top
+  text, displaying:                                 echo invocation
+  text, reformatting:                               fmt invocation
+  this in date strings:                             Relative items in date
+                                                    strings
+  time:                                             touch invocation
+  time:                                             Special
+  time conversion specifiers:                       Time conversion specifiers
+  time formats:                                     pr invocation
+  time formats:                                     date invocation
+  time limit:                                       timeout invocation
+  time of day item:                                 Time of day items
+  time setting:                                     Setting the time
+  time style:                                       Formatting file timestamps
+  time style:                                       du invocation
+  time units:                                       timeout invocation
+  time units:                                       sleep invocation
+  time zone correction:                             Time of day items
+  time zone item:                                   General date syntax
+  time zone item:                                   Time zone items
+  time, printing or setting:                        date invocation
+  timeout:                                          timeout invocation
+  timestamps of installed files, preserving:        install invocation
+  timestamps, changing file:                        touch invocation
+  TIME_STYLE:                                       Formatting file timestamps
+  TIME_STYLE:                                       du invocation
+  TMPDIR:                                           sort invocation
+  TMPDIR:                                           sort invocation
+  today in date strings:                            Relative items in date
+                                                    strings
+  tomorrow:                                         Options for date
+  tomorrow in date strings:                         Relative items in date
+                                                    strings
+  topological sort:                                 tsort invocation
+  tostop:                                           Local
+  total counts:                                     wc invocation
+  touch:                                            touch invocation
+  tr:                                               tr invocation
+  trailing slashes:                                 Trailing slashes
+  translating characters:                           Translating
+  true:                                             true invocation
+  truncate:                                         truncate invocation
+  truncating output file, avoiding:                 dd invocation
+  truncating, file sizes:                           truncate invocation
+  tsort:                                            tsort invocation
+  tty:                                              tty invocation
+  two-way parity:                                   Control
+  type size:                                        od invocation
+  TZ:                                               pr invocation
+  TZ:                                               Formatting file timestamps
+  TZ:                                               touch invocation
+  TZ:                                               stat invocation
+  TZ:                                               who invocation
+  TZ:                                               date invocation
+  TZ:                                               Options for date
+  TZ:                                               Specifying time zone rules
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+U
+  u, and disabling special characters:              Characters
+  ucase, converting to:                             dd invocation
+  umask and modes:                                  Umask and Protection
+  uname:                                            uname invocation
+  unblock:                                          dd invocation
+  unexpand:                                         unexpand invocation
+  Unicode:                                          printf invocation
+  uniq:                                             uniq invocation
+  unique lines, outputting:                         uniq invocation
+  uniquify files:                                   uniq invocation
+  uniquifying output:                               sort invocation
+  Universal Time:                                   Options for date
+  unlink:                                           unlink invocation
+  unprintable characters, ignoring:                 sort invocation
+  unsorted directory listing:                       Sorting the output
+  upper:                                            Character sets
+  uppercase, translating to lowercase:              Input
+  uptime:                                           uptime invocation
+  use time, changing:                               touch invocation
+  use time, printing or sorting files by:           Sorting the output
+  use time, printing or sorting files by:           Sorting the output
+  use time, show the most recent:                   du invocation
+  user IDs, disambiguating:                         Disambiguating names and
+                                                    IDs
+  user information, commands for:                   User information
+  user name, printing:                              logname invocation
+  user names, disambiguating:                       Disambiguating names and
+                                                    IDs
+  usernames, printing current:                      users invocation
+  users:                                            users invocation
+  UTC:                                              Options for date
+  utmp:                                             logname invocation
+  utmp:                                             users invocation
+  utmp:                                             who invocation
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+V
+  valid file names, checking for:                   pathchk invocation
+  variable-length records, converting to            dd invocation
+  fixed-length:
+  vdir:                                             vdir invocation
+  verbose ls format:                                What information is listed
+  verifying MD5 checksums:                          md5sum invocation
+  verifying MD5 checksums:                          md5sum invocation
+  verifying MD5 checksums:                          md5sum invocation
+  verifying MD5 checksums:                          md5sum invocation
+  verifying MD5 checksums:                          md5sum invocation
+  version number sort:                              sort invocation
+  version number, finding:                          Common options
+  version of kernel:                                uname invocation
+  version, sorting option for ls:                   Sorting the output
+  version-control Emacs variable:                   Backup options
+  VERSION_CONTROL:                                  Backup options
+  VERSION_CONTROL:                                  cp invocation
+  VERSION_CONTROL:                                  install invocation
+  VERSION_CONTROL:                                  mv invocation
+  VERSION_CONTROL:                                  ln invocation
+  vertical sorted files in columns:                 General output formatting
+  vtn:                                              Output
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+W
+  wc:                                               wc invocation
+  week in date strings:                             Relative items in date
+                                                    strings
+  werase:                                           Characters
+  who:                                              who invocation
+  who am i:                                         who invocation
+  whoami:                                           whoami invocation
+  word count:                                       wc invocation
+  working context:                                  Working context
+  working directory, printing:                      pwd invocation
+  wrap data:                                        base64 invocation
+  wrapping long input lines:                        fold invocation
+  writable file check:                              Access permission tests
+  write permission:                                 Mode Structure
+  write permission, symbolic:                       Setting Permissions
+  write, allowed:                                   who invocation
+  wtmp:                                             users invocation
+  wtmp:                                             who invocation
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+X
+  xcase:                                            Local
+  xdigit:                                           Character sets
+  xfs file system type:                             df invocation
+  XON/XOFF flow control:                            Input
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Y
+  year in date strings:                             Relative items in date
+                                                    strings
+  yes:                                              yes invocation
+  yesterday:                                        Options for date
+  yesterday in date strings:                        Relative items in date
+                                                    strings
+  yottabyte, definition of:                         Block size
+  Youmans, B.:                                      Introduction
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Z
+  zero-length string check:                         String tests
+  zettabyte, definition of:                         Block size
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ Jump   !   %   &   *   +   -   /   1   2   3   5   <   =   >   \   _   |  
+ to:    A   B   C   D   E   F   G   H   I   J   K   L   M   N   O   P   Q   R  
+        S   T   U   V   W   X   Y   Z  
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Previous: GNU Free Documentation License, Up: Top   [Contents][Index]
+

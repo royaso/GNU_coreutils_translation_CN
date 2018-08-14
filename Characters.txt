@@ -1,0 +1,90 @@
+Next: Special, Previous: Combination, Up: stty invocation   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+19.2.6 Special characters
+
+The special characters’ default values vary from system to system. They are set
+with the syntax ‘name value’, where the names are listed below and the value
+can be given either literally, in hat notation (‘^c’), or as an integer which
+may start with ‘0x’ to indicate hexadecimal, ‘0’ to indicate octal, or any
+other digit to indicate decimal.
+
+For GNU stty, giving a value of ^- or undef disables that special character.
+(This is incompatible with Ultrix stty, which uses a value of ‘u’ to disable a
+special character. GNU stty treats a value ‘u’ like any other, namely to set
+that special character to U.)
+
+‘intr’
+   
+    Send an interrupt signal.
+
+‘quit’
+   
+    Send a quit signal.
+
+‘erase’
+   
+    Erase the last character typed.
+
+‘kill’
+   
+    Erase the current line.
+
+‘eof’
+   
+    Send an end of file (terminate the input).
+
+‘eol’
+   
+    End the line.
+
+‘eol2’
+   
+    Alternate character to end the line. Non-POSIX.
+
+‘discard’
+   
+    Alternate character to toggle discarding of output. Non-POSIX.
+
+‘swtch’
+   
+    Switch to a different shell layer. Non-POSIX.
+
+‘status’
+   
+    Send an info signal. Not currently supported on Linux. Non-POSIX.
+
+‘start’
+   
+    Restart the output after stopping it.
+
+‘stop’
+   
+    Stop the output.
+
+‘susp’
+   
+    Send a terminal stop signal.
+
+‘dsusp’
+   
+    Send a terminal stop signal after flushing the input. Non-POSIX.
+
+‘rprnt’
+   
+    Redraw the current line. Non-POSIX.
+
+‘werase’
+   
+    Erase the last word typed. Non-POSIX.
+
+‘lnext’
+   
+    Enter the next character typed literally, even if it is a special
+    character. Non-POSIX.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Next: Special, Previous: Combination, Up: stty invocation   [Contents][Index]
+

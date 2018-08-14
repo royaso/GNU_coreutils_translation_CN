@@ -1,0 +1,40 @@
+Next: mknod invocation, Previous: mkdir invocation, Up: Special file types   [
+Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+12.4 mkfifo: Make FIFOs (named pipes)
+
+mkfifo creates FIFOs (also called named pipes) with the specified names.
+Synopsis:
+
+mkfifo [option] name…
+
+A FIFO is a special file type that permits independent processes to
+communicate. One process opens the FIFO file for writing, and another for
+reading, after which data can flow as with the usual anonymous pipe in shells
+or elsewhere.
+
+The program accepts the following options. Also see Common options.
+
+‘-m mode’
+‘--mode=mode’
+   
+    Set the mode of created FIFOs to mode, which is symbolic as in chmod and
+    uses ‘a=rw’ (read and write allowed for everyone) for the point of
+    departure. mode should specify only file permission bits. See File
+    permissions.
+
+‘-Z’
+‘--context[=context]’
+   
+    Without a specified context, adjust the SELinux security context according
+    to the system default type for destination files, similarly to the
+    restorecon command. The long form of this option with a specific context
+    specified, will set the context for newly created files only. With a
+    specified context, if both SELinux and SMACK are disabled, a warning is
+    issued.
+
+An exit status of zero indicates success, and a nonzero value indicates
+failure.
+

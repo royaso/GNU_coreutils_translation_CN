@@ -1,0 +1,78 @@
+Next: Local, Previous: Input, Up: stty invocation   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+19.2.3 Output settings
+
+These settings control operations on data sent to the terminal.
+
+‘opost’
+   
+    Postprocess output. May be negated.
+
+‘olcuc’
+   
+    Translate lowercase characters to uppercase. Non-POSIX. May be negated.
+    (Note ouclc is not currently implemented.)
+
+‘ocrnl’
+   
+    Translate carriage return to newline. Non-POSIX. May be negated.
+
+‘onlcr’
+   
+    Translate newline to carriage return-newline. Non-POSIX. May be negated.
+
+‘onocr’
+   
+    Do not print carriage returns in the first column. Non-POSIX. May be
+    negated.
+
+‘onlret’
+   
+    Newline performs a carriage return. Non-POSIX. May be negated.
+
+‘ofill’
+   
+    Use fill (padding) characters instead of timing for delays. Non-POSIX. May
+    be negated.
+
+‘ofdel’
+   
+    Use ASCII DEL characters for fill instead of ASCII NUL characters.
+    Non-POSIX. May be negated.
+
+‘nl1’
+‘nl0’
+   
+    Newline delay style. Non-POSIX.
+
+‘cr3’
+‘cr2’
+‘cr1’
+‘cr0’
+   
+    Carriage return delay style. Non-POSIX.
+
+‘tab3’
+‘tab2’
+‘tab1’
+‘tab0’
+   
+    Horizontal tab delay style. Non-POSIX.
+
+‘bs1’
+‘bs0’
+   
+    Backspace delay style. Non-POSIX.
+
+‘vt1’
+‘vt0’
+   
+    Vertical tab delay style. Non-POSIX.
+
+‘ff1’
+‘ff0’
+   
+    Form feed delay style. Non-POSIX.
+

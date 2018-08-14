@@ -1,0 +1,119 @@
+Next: Formatting the file names, Previous: General output formatting, Up: ls
+invocation   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+10.1.6 Formatting file timestamps
+
+By default, file timestamps are listed in abbreviated form, using a date like
+‘Mar 30  2002’ for non-recent timestamps, and a date-without-year and time like
+‘Mar 30 23:45’ for recent timestamps. This format can change depending on the
+current locale as detailed below.
+
+A timestamp is considered to be recent if it is less than six months old, and
+is not dated in the future. If a timestamp dated today is not listed in recent
+form, the timestamp is in the future, which means you probably have clock skew
+problems which may break programs like make that rely on file timestamps. See
+File timestamps.
+
+Timestamps are listed according to the time zone rules specified by the TZ
+environment variable, or by the system default rules if TZ is not set. See
+Specifying the Time Zone with TZ in The GNU C Library Reference Manual.
+
+The following option changes how file timestamps are printed.
+
+‘--time-style=style’
+   
+    List timestamps in style style. The style should be one of the following:
+
+    ‘+format’
+       
+        List timestamps using format, where format is interpreted like the
+        format argument of date (see date invocation). For example,
+        --time-style="+%Y-%m-%d %H:%M:%S" causes ls to list timestamps like
+        ‘2002-03-30 23:45:56’. As with date, format’s interpretation is
+        affected by the LC_TIME locale category.
+
+        If format contains two format strings separated by a newline, the
+        former is used for non-recent files and the latter for recent files; if
+        you want output columns to line up, you may need to insert spaces in
+        one of the two formats.
+
+    ‘full-iso’
+
+        List timestamps in full using ISO 8601-like date, time, and time zone
+        components with nanosecond precision, e.g., ‘2002-03-30
+        23:45:56.477817180 -0700’. This style is equivalent to ‘+%Y-%m-%d
+        %H:%M:%S.%N %z’.
+
+        This is useful because the time output includes all the information
+        that is available from the operating system. For example, this can help
+        explain make’s behavior, since GNU make uses the full timestamp to
+        determine whether a file is out of date.
+
+    ‘long-iso’
+
+        List ISO 8601 date and time components with minute precision, e.g.,
+        ‘2002-03-30 23:45’. These timestamps are shorter than ‘full-iso’
+        timestamps, and are usually good enough for everyday work. This style
+        is equivalent to ‘+%Y-%m-%d %H:%M’.
+
+    ‘iso’
+
+        List ISO 8601 dates for non-recent timestamps (e.g., ‘2002-03-30 ’),
+        and ISO 8601-like month, day, hour, and minute for recent timestamps
+        (e.g., ‘03-30 23:45’). These timestamps are uglier than ‘long-iso’
+        timestamps, but they carry nearly the same information in a smaller
+        space and their brevity helps ls output fit within traditional
+        80-column output lines. The following two ls invocations are
+        equivalent:
+
+        newline='
+        '
+        ls -l --time-style="+%Y-%m-%d $newline%m-%d %H:%M"
+        ls -l --time-style="iso"
+
+    ‘locale’
+       
+        List timestamps in a locale-dependent form. For example, a Finnish
+        locale might list non-recent timestamps like ‘maalis 30  2002’ and
+        recent timestamps like ‘maalis 30 23:45’. Locale-dependent timestamps
+        typically consume more space than ‘iso’ timestamps and are harder for
+        programs to parse because locale conventions vary so widely, but they
+        are easier for many people to read.
+
+        The LC_TIME locale category specifies the timestamp format. The default
+        POSIX locale uses timestamps like ‘Mar 30  2002’ and ‘Mar 30 23:45’; in
+        this locale, the following two ls invocations are equivalent:
+
+        newline='
+        '
+        ls -l --time-style="+%b %e  %Y$newline%b %e %H:%M"
+        ls -l --time-style="locale"
+
+        Other locales behave differently. For example, in a German locale,
+        --time-style="locale" might be equivalent to --time-style="+%e. %b %Y
+        $newline%e. %b %H:%M" and might generate timestamps like ‘30. Mär
+        2002 ’ and ‘30. Mär 23:45’.
+
+    ‘posix-style’
+       
+        List POSIX-locale timestamps if the LC_TIME locale category is POSIX,
+        style timestamps otherwise. For example, the ‘posix-long-iso’ style
+        lists timestamps like ‘Mar 30  2002’ and ‘Mar 30 23:45’ when in the
+        POSIX locale, and like ‘2002-03-30 23:45’ otherwise.
+
+You can specify the default value of the --time-style option with the
+environment variable TIME_STYLE; if TIME_STYLE is not set the default style is
+‘locale’. GNU Emacs 21.3 and later use the --dired option and therefore can
+parse any date format, but if you are using Emacs 21.1 or 21.2 and specify a
+non-POSIX locale you may need to set ‘TIME_STYLE="posix-long-iso"’.
+
+To avoid certain denial-of-service attacks, timestamps that would be longer
+than 1000 bytes may be treated as errors.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Next: Formatting the file names, Previous: General output formatting, Up: ls
+invocation   [Contents][Index]
+

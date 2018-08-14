@@ -1,0 +1,77 @@
+Next: Setting the time, Previous: Literal conversion specifiers, Up: date
+invocation   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+21.1.4 Padding and other flags
+
+Unless otherwise specified, date normally pads numeric fields with zeros, so
+that, for example, numeric months are always output as two digits. Seconds
+since the epoch are not padded, though, since there is no natural width for
+them.
+
+As a GNU extension, date recognizes any of the following optional flags after
+the ‘%’:
+
+‘-’
+
+    (hyphen) Do not pad the field; useful if the output is intended for human
+    consumption.
+
+‘_’
+
+    (underscore) Pad with spaces; useful if you need a fixed number of
+    characters in the output, but zeros are too distracting.
+
+‘0’
+
+    (zero) Pad with zeros even if the conversion specifier would normally pad
+    with spaces.
+
+‘^’
+
+    Use upper case characters if possible.
+
+‘#’
+
+    Use opposite case characters if possible. A field that is normally upper
+    case becomes lower case, and vice versa.
+
+Here are some examples of padding:
+
+date +%d/%m -d "Feb 1"
+⇒ 01/02
+date +%-d/%-m -d "Feb 1"
+⇒ 1/2
+date +%_d/%_m -d "Feb 1"
+⇒  1/ 2
+
+As a GNU extension, you can specify the field width (after any flag, if
+present) as a decimal number. If the natural size of the output of the field
+has less than the specified number of characters, the result is written right
+adjusted and padded to the given size. For example, ‘%9B’ prints the right
+adjusted month name in a field of width 9.
+
+An optional modifier can follow the optional flag and width specification. The
+modifiers are:
+
+‘E’
+
+    Use the locale’s alternate representation for date and time. This modifier
+    applies to the ‘%c’, ‘%C’, ‘%x’, ‘%X’, ‘%y’ and ‘%Y’ conversion specifiers.
+    In a Japanese locale, for example, ‘%Ex’ might yield a date format based on
+    the Japanese Emperors’ reigns.
+
+‘O’
+
+    Use the locale’s alternate numeric symbols for numbers. This modifier
+    applies only to numeric conversion specifiers.
+
+If the format supports the modifier but no alternate representation is
+available, it is ignored.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Next: Setting the time, Previous: Literal conversion specifiers, Up: date
+invocation   [Contents][Index]
+

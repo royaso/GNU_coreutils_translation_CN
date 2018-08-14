@@ -1,0 +1,104 @@
+Next: Date conversion specifiers, Up: date invocation   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+21.1.1 Time conversion specifiers
+
+date conversion specifiers related to times.
+
+‘%H’
+
+    hour (‘00’…‘23’)
+
+‘%I’
+
+    hour (‘01’…‘12’)
+
+‘%k’
+
+    hour, space padded (‘ 0’…‘23’); equivalent to ‘%_H’. This is a GNU
+    extension.
+
+‘%l’
+
+    hour, space padded (‘ 1’…‘12’); equivalent to ‘%_I’. This is a GNU
+    extension.
+
+‘%M’
+
+    minute (‘00’…‘59’)
+
+‘%N’
+
+    nanoseconds (‘000000000’…‘999999999’). This is a GNU extension.
+
+‘%p’
+
+    locale’s equivalent of either ‘AM’ or ‘PM’; blank in many locales. Noon is
+    treated as ‘PM’ and midnight as ‘AM’.
+
+‘%P’
+
+    like ‘%p’, except lower case. This is a GNU extension.
+
+‘%r’
+
+    locale’s 12-hour clock time (e.g., ‘11:11:04 PM’)
+
+‘%R’
+
+    24-hour hour and minute. Same as ‘%H:%M’.
+
+‘%s’
+   
+    seconds since the epoch, i.e., since 1970-01-01 00:00:00 UTC. Leap seconds
+    are not counted unless leap second support is available. See %s-examples,
+    for examples. This is a GNU extension.
+
+‘%S’
+   
+    second (‘00’…‘60’). This may be ‘60’ if leap seconds are supported.
+
+‘%T’
+
+    24-hour hour, minute, and second. Same as ‘%H:%M:%S’.
+
+‘%X’
+
+    locale’s time representation (e.g., ‘23:13:48’)
+
+‘%z’
+
+    Four-digit numeric time zone, e.g., ‘-0600’ or ‘+0530’, or ‘-0000’ if no
+    time zone is determinable. This value reflects the numeric time zone
+    appropriate for the current time, using the time zone rules specified by
+    the TZ environment variable. A time zone is not determinable if its numeric
+    offset is zero and its abbreviation begins with ‘-’. The time (and
+    optionally, the time zone rules) can be overridden by the --date option.
+
+‘%:z’
+
+    Numeric time zone with ‘:’, e.g., ‘-06:00’ or ‘+05:30’), or ‘-00:00’ if no
+    time zone is determinable. This is a GNU extension.
+
+‘%::z’
+
+    Numeric time zone to the nearest second with ‘:’ (e.g., ‘-06:00:00’ or
+    ‘+05:30:00’), or ‘-00:00:00’ if no time zone is determinable. This is a GNU
+    extension.
+
+‘%:::z’
+
+    Numeric time zone with ‘:’ using the minimum necessary precision (e.g.,
+    ‘-06’, ‘+05:30’, or ‘-04:56:02’), or ‘-00’ if no time zone is determinable.
+    This is a GNU extension.
+
+‘%Z’
+
+    alphabetic time zone abbreviation (e.g., ‘EDT’), or nothing if no time zone
+    is determinable. See ‘%z’ for how it is determined.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Next: Date conversion specifiers, Up: date invocation   [Contents][Index]
+

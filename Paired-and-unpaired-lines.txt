@@ -1,0 +1,84 @@
+Next: Header lines, Previous: Working with fields, Up: join invocation   [
+Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+8.3.4 Controlling join’s field matching
+
+In this section the sort commands are omitted for brevity. Sorting the files
+before joining is still required.
+
+join’s default behavior is to print only lines common to both input files. Use
+-a and -v to print unpairable lines from one or both files.
+
+All examples below use the following two (pre-sorted) input files:
+
+$ cat file1 $ cat file2
+a 1         a A
+b 2         c C
+
+                Command                                 Outcome
+$ join file1 file2
+a 1 A                                   common lines (intersection)
+
+$ join -a 1 file1 file2
+a 1 A                                   common lines and unpaired lines from
+b 2                                     the first file
+
+$ join -a 2 file1 file2
+a 1 A                                   common lines and unpaired lines from
+c C                                     the second file
+
+$ join -a 1 -a 2 file1 file2
+a 1 A                                   all lines (paired and unpaired) from
+b 2                                     both files (union).
+c C                                     see note below regarding -o auto.
+
+$ join -v 1 file1 file2                 unpaired lines from the first file (
+b 1                                     difference)
+
+$ join -v 2 file1 file2                 unpaired lines from the second file (
+c C                                     difference)
+
+$ join -v 1 -v 2 file1 file2            unpaired lines from both files,
+b 2                                     omitting common lines (symmetric
+c C                                     difference).
+
+The -o auto -e X options are useful when dealing with unpaired lines. The
+following example prints all lines (common and unpaired) from both files.
+Without -o auto it is not easy to discern which fields originate from which
+file:
+
+$ join -a 1 -a 2 file1 file2
+a 1 A
+b 2
+c C
+
+$ join -o auto -e X -a 1 -a 2 file1 file2
+a 1 A
+b 2 X
+c X C
+
+If the input has no unpairable lines, a GNU extension is available; the sort
+order can be any order that considers two fields to be equal if and only if the
+sort comparison described above considers them to be equal. For example:
+
+$ cat file1
+a a1
+c c1
+b b1
+
+$ cat file2
+a a2
+c c2
+b b2
+$ join file1 file2
+a a1 a2
+c c1 c2
+b b1 b2
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Next: Header lines, Previous: Working with fields, Up: join invocation   [
+Contents][Index]
+

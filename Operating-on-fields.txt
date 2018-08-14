@@ -1,0 +1,10 @@
+Next: Operating on characters, Previous: Operating on sorted files, Up: Top   [
+Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+8 Operating on fields
+
+• cut invocation:      Print selected parts of lines.
+• paste invocation:    Merge lines of files.
+• join invocation:     Join lines on a common field.

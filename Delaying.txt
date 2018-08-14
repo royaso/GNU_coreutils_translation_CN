@@ -1,0 +1,8 @@
+Next: Numeric operations, Previous: Process control, Up: Top   [Contents][Index
+]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+25 Delaying
+
+• sleep invocation:    Delay for a specified time.

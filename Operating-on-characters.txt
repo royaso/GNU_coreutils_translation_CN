@@ -1,0 +1,12 @@
+Next: Directory listing, Previous: Operating on fields, Up: Top   [Contents][
+Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+9 Operating on characters
+
+These commands operate on individual characters.
+
+• tr invocation:          Translate, squeeze, and/or delete characters.
+• expand invocation:      Convert tabs to spaces.
+• unexpand invocation:    Convert spaces to tabs.

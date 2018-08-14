@@ -1,0 +1,33 @@
+Next: Set operations, Previous: Paired and unpaired lines, Up: join invocation
+  [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+8.3.5 Header lines
+
+The --header option can be used when the files to join have a header line which
+is not sorted:
+
+$ cat file1
+Name     Age
+Alice    25
+Charlie  34
+
+$ cat file2
+Name   Country
+Alice  France
+Bob    Spain
+
+$ join --header -o auto -e NA -a1 -a2 file1 file2
+Name     Age   Country
+Alice    25    France
+Bob      NA    Spain
+Charlie  34    NA
+
+To sort a file with a header line, use GNU sed -u. The following example sort
+the files but keeps the first line of each file in place:
+
+$ ( sed -u 1q ; sort -k2b,2 ) < file1 > file1.sorted
+$ ( sed -u 1q ; sort -k2b,2 ) < file2 > file2.sorted
+$ join --header -o auto -e NA -a1 -a2 file1.sorted file2.sorted > file3
+

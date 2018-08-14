@@ -1,0 +1,68 @@
+Next: Numeric expressions, Up: expr invocation   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+16.4.1 String expressions
+
+expr supports pattern matching and other string operators. These have higher
+precedence than both the numeric and relational operators (in the next
+sections).
+
+‘string : regex’
+   
+    Perform pattern matching. The arguments are converted to strings and the
+    second is considered to be a (basic, a la GNU grep) regular expression,
+    with a ^ implicitly prepended. The first argument is then matched against
+    this regular expression.
+
+    If the match succeeds and regex uses ‘\(’ and ‘\)’, the : expression
+    returns the part of string that matched the subexpression; otherwise, it
+    returns the number of characters matched.
+
+    If the match fails, the : operator returns the null string if ‘\(’ and ‘\)’
+    are used in regex, otherwise 0.
+
+    Only the first ‘\( … \)’ pair is relevant to the return value; additional
+    pairs are meaningful only for grouping the regular expression operators.
+
+    In the regular expression, \+, \?, and \| are operators which respectively
+    match one or more, zero or one, or separate alternatives. SunOS and other
+    expr’s treat these as regular characters. (POSIX allows either behavior.)
+    See Regular Expression Library in Regex, for details of regular expression
+    syntax. Some examples are in Examples of expr.
+
+‘match string regex’
+   
+    An alternative way to do pattern matching. This is the same as
+    ‘string : regex’.
+
+‘substr string position length’
+   
+    Returns the substring of string beginning at position with length at most
+    length. If either position or length is negative, zero, or non-numeric,
+    returns the null string.
+
+‘index string charset’
+   
+    Returns the first position in string where the first character in charset
+    was found. If no character in charset is found in string, return 0.
+
+‘length string’
+   
+    Returns the length of string.
+
+‘+ token’
+   
+    Interpret token as a string, even if it is a keyword like match or an
+    operator like /. This makes it possible to test expr length + "$x" or expr
+    + "$x" : '.*/\(.\)' and have it do the right thing even if the value of $x
+    happens to be (for example) / or index. This operator is a GNU extension.
+    Portable shell scripts should use " $token" : ' \(.*\)' instead of +
+    "$token".
+
+To make expr interpret keywords as strings, you must use the quote operator.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Next: Numeric expressions, Up: expr invocation   [Contents][Index]
+

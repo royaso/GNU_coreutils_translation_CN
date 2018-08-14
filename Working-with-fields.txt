@@ -1,0 +1,52 @@
+Next: Paired and unpaired lines, Previous: Sorting files for join, Up: join
+invocation   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+8.3.3 Working with fields
+
+Use -1,-2 to set the key fields for each of the input files. Ensure the
+preceding sort commands operated on the same fields.
+
+The following example joins two files, using the values from seventh field of
+the first file and the third field of the second file:
+
+$ sort -k 7b,7 file1 > file1.sorted
+$ sort -k 3b,3 file2 > file2.sorted
+$ join -1 7 -2 3 file1.sorted file2.sorted > file3
+
+If the field number is the same for both files, use -j:
+
+$ sort -k4b,4 file1 > file1.sorted
+$ sort -k4b,4 file2 > file2.sorted
+$ join -j4    file1.sorted file2.sorted > file3
+
+Both sort and join operate of whitespace-delimited fields. To specify a
+different delimiter, use -t in both:
+
+$ sort -t, -k3b,3 file1 > file1.sorted
+$ sort -t, -k3b,3 file2 > file2.sorted
+$ join -t, -j3    file1.sorted file2.sorted > file3
+
+To specify a tab (ASCII 0x09) character instead of whitespace, use ^3:
+
+$ sort -t$'\t' -k3b,3 file1 > file1.sorted
+$ sort -t$'\t' -k3b,3 file2 > file2.sorted
+$ join -t$'\t' -j3    file1.sorted file2.sorted > file3
+
+If ‘join -t ''’ is specified then the whole line is considered which matches
+the default operation of sort:
+
+$ sort file1 > file1.sorted
+$ sort file2 > file2.sorted
+$ join -t'' file1.sorted file2.sorted > file3
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Footnotes
+
+(3)
+
+the $'\t' is supported in most modern shells. For older shells, use a literal
+tab
+

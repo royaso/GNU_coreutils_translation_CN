@@ -1,0 +1,31 @@
+Next: Connectives for test, Previous: String tests, Up: test invocation   [
+Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+16.3.5 Numeric tests
+
+Numeric relational operators. The arguments must be entirely numeric (possibly
+negative), or the special expression -l string, which evaluates to the length
+of string.
+
+‘arg1 -eq arg2’
+‘arg1 -ne arg2’
+‘arg1 -lt arg2’
+‘arg1 -le arg2’
+‘arg1 -gt arg2’
+‘arg1 -ge arg2’
+   
+    These arithmetic binary operators return true if arg1 is equal, not-equal,
+    less-than, less-than-or-equal, greater-than, or greater-than-or-equal than
+    arg2, respectively.
+
+For example:
+
+test -1 -gt -2 && echo yes
+⇒ yes
+test -l abc -gt 1 && echo yes
+⇒ yes
+test 0x100 -eq 1
+error→ test: integer expression expected before -eq
+

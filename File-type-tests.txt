@@ -1,0 +1,43 @@
+Next: Access permission tests, Up: test invocation   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+16.3.1 File type tests
+
+These options test for particular types of files. (Everything’s a file, but not
+all files are the same!)
+
+‘-b file’
+   
+    True if file exists and is a block special device.
+
+‘-c file’
+   
+    True if file exists and is a character special device.
+
+‘-d file’
+   
+    True if file exists and is a directory.
+
+‘-f file’
+   
+    True if file exists and is a regular file.
+
+‘-h file’
+‘-L file’
+   
+    True if file exists and is a symbolic link. Unlike all other file-related
+    tests, this test does not dereference file if it is a symbolic link.
+
+‘-p file’
+   
+    True if file exists and is a named pipe.
+
+‘-S file’
+   
+    True if file exists and is a socket.
+
+‘-t fd’
+   
+    True if fd is a file descriptor that is associated with a terminal.
+

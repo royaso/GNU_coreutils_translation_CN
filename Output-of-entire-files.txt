@@ -1,0 +1,16 @@
+Next: Formatting file contents, Previous: Common options, Up: Top   [Contents][
+Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+3 Output of entire files
+
+These commands read and write entire files, possibly transforming them in some
+way.
+
+• cat invocation:       Concatenate and write files.
+• tac invocation:       Concatenate and write files in reverse.
+• nl invocation:        Number lines and write files.
+• od invocation:        Write files in octal or other formats.
+• base32 invocation:    Transform data into printable data.
+• base64 invocation:    Transform data into printable data.

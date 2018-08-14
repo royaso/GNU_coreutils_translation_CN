@@ -1,0 +1,11 @@
+Next: File permissions, Previous: Delaying, Up: Top   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+26 Numeric operations
+
+These programs do numerically-related operations.
+
+• factor invocation:    Show factors of numbers.
+• numfmt invocation:    Reformat numbers.
+• seq invocation:       Print sequences of numbers.

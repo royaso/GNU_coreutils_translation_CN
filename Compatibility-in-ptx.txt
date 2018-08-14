@@ -1,0 +1,56 @@
+Previous: Output formatting in ptx, Up: ptx invocation   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+7.5.5 The GNU extensions to ptx
+
+This version of ptx contains a few features which do not exist in System V ptx.
+These extra features are suppressed by using the -G command line option, unless
+overridden by other command line options. Some GNU extensions cannot be
+recovered by overriding, so the simple rule is to avoid -G if you care about
+GNU extensions. Here are the differences between this program and System V ptx.
+
+  • This program can read many input files at once, it always writes the
+    resulting concordance on standard output. On the other hand, System V ptx
+    reads only one file and sends the result to standard output or, if a second
+    file parameter is given on the command, to that file.
+
+    Having output parameters not introduced by options is a dangerous practice
+    which GNU avoids as far as possible. So, for using ptx portably between GNU
+    and System V, you should always use it with a single input file, and always
+    expect the result on standard output. You might also want to automatically
+    configure in a -G option to ptx calls in products using ptx, if the
+    configurator finds that the installed ptx accepts -G.
+
+  • The only options available in System V ptx are options -b, -f, -g, -i, -o,
+    -r, -t and -w. All other options are GNU extensions and are not repeated in
+    this enumeration. Moreover, some options have a slightly different meaning
+    when GNU extensions are enabled, as explained below.
+  • By default, concordance output is not formatted for troff or nroff. It is
+    rather formatted for a dumb terminal. troff or nroff output may still be
+    selected through option -O.
+  • Unless -R option is used, the maximum reference width is subtracted from
+    the total output line width. With GNU extensions disabled, width of
+    references is not taken into account in the output line width computations.
+  • All 256 bytes, even ASCII NUL bytes, are always read and processed from
+    input file with no adverse effect, even if GNU extensions are disabled.
+    However, System V ptx does not accept 8-bit characters, a few control
+    characters are rejected, and the tilde ‘~’ is also rejected.
+  • Input line length is only limited by available memory, even if GNU
+    extensions are disabled. However, System V ptx processes only the first 200
+    characters in each line.
+  • The break (non-word) characters default to be every character except all
+    letters of the underlying character set, diacriticized or not. When GNU
+    extensions are disabled, the break characters default to space, tab and
+    newline only.
+  • The program makes better use of output line width. If GNU extensions are
+    disabled, the program rather tries to imitate System V ptx, but still,
+    there are some slight disposition glitches this program does not completely
+    reproduce.
+  • The user can specify both an Ignore file and an Only file. This is not
+    allowed with System V ptx.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Previous: Output formatting in ptx, Up: ptx invocation   [Contents][Index]
+

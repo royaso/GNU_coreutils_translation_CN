@@ -1,0 +1,56 @@
+Next: Umask and Protection, Previous: Conditional Executability, Up: Symbolic
+Modes   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+27.2.5 Making Multiple Changes
+
+The format of symbolic modes is actually more complex than described above (see
+Setting Permissions). It provides two ways to make multiple changes to files’
+mode bits.
+
+The first way is to specify multiple operation and permissions parts after a
+users part in the symbolic mode.
+
+For example, the mode:
+
+og+rX-w
+
+gives users other than the owner of the file read permission and, if it is a
+directory or if someone already had execute permission to it, gives them
+execute/search permission; and it also denies them write permission to the
+file. It does not affect the permission that the owner of the file has for it.
+The above mode is equivalent to the two modes:
+
+og+rX
+og-w
+
+The second way to make multiple changes is to specify more than one simple
+symbolic mode, separated by commas. For example, the mode:
+
+a+r,go-w
+
+gives everyone permission to read the file and removes write permission on it
+for all users except its owner. Another example:
+
+u=rwx,g=rx,o=
+
+sets all of the permission bits for the file explicitly. (It gives users who
+are not in the file’s group no permission at all for it.)
+
+The two methods can be combined. The mode:
+
+a+r,g+x-w
+
+gives all users permission to read the file, and gives users who are in the
+file’s group permission to execute/search it as well, but not permission to
+write to it. The above mode could be written in several different ways; another
+is:
+
+u+r,g+rx,o+r,g-w
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Next: Umask and Protection, Previous: Conditional Executability, Up: Symbolic
+Modes   [Contents][Index]
+

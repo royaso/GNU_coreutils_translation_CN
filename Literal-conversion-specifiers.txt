@@ -1,0 +1,21 @@
+Next: Padding and other flags, Previous: Date conversion specifiers, Up: date
+invocation   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+21.1.3 Literal conversion specifiers
+
+date conversion specifiers that produce literal strings.
+
+‘%%’
+
+    a literal %
+
+‘%n’
+
+    a newline
+
+‘%t’
+
+    a horizontal tab
+

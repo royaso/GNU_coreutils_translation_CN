@@ -1,0 +1,32 @@
+Next: String tests, Previous: Access permission tests, Up: test invocation   [
+Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+16.3.3 File characteristic tests
+
+These options test other file characteristics.
+
+‘-e file’
+   
+    True if file exists.
+
+‘-s file’
+   
+    True if file exists and has a size greater than zero.
+
+‘file1 -nt file2’
+   
+    True if file1 is newer (according to modification date) than file2, or if
+    file1 exists and file2 does not.
+
+‘file1 -ot file2’
+   
+    True if file1 is older (according to modification date) than file2, or if
+    file2 exists and file1 does not.
+
+‘file1 -ef file2’
+   
+    True if file1 and file2 have the same device and inode numbers, i.e., if
+    they are hard links to each other.
+

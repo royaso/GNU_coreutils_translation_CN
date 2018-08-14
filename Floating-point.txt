@@ -1,0 +1,28 @@
+Next: Signal specifications, Previous: Block size, Up: Common options   [
+Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2.4 Floating point numbers
+
+Commands that accept or produce floating point numbers employ the floating
+point representation of the underlying system, and suffer from rounding error,
+overflow, and similar floating-point issues. Almost all modern systems use
+IEEE-754 floating point, and it is typically portable to assume IEEE-754
+behavior these days. IEEE-754 has positive and negative infinity, distinguishes
+positive from negative zero, and uses special values called NaNs to represent
+invalid computations such as dividing zero by itself. For more information,
+please see David Goldberg’s paper What Every Computer Scientist Should Know
+About Floating-Point Arithmetic.
+
+Commands that accept floating point numbers as options, operands or input use
+the standard C functions strtod and strtold to convert from text to floating
+point numbers. These floating point numbers therefore can use scientific
+notation like 1.0e-34 and -10e100. Commands that parse floating point also
+understand case-insensitive inf, infinity, and NaN, although whether such
+values are useful depends on the command in question. Modern C implementations
+also accept hexadecimal floating point numbers such as -0x.ep-3, which stands
+for -14/16 times 2^-3, which equals -0.109375. The LC_NUMERIC locale determines
+the decimal-point character. See Parsing of Floats in The GNU C Library
+Reference Manual.
+

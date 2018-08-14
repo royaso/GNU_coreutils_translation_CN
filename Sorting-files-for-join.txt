@@ -1,0 +1,40 @@
+Next: Working with fields, Previous: General options in join, Up: join
+invocation   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+8.3.2 Pre-sorting
+
+join requires sorted input files. Each input file should be sorted according to
+the key (=field/column number) used in join. The recommended sorting option is
+‘sort -k 1b,1’ (assuming the desired key is in the first column).
+
+Typical usage:
+
+$ sort -k 1b,1 file1 > file1.sorted
+$ sort -k 1b,1 file2 > file2.sorted
+$ join file1.sorted file2.sorted > file3
+
+Normally, the sort order is that of the collating sequence specified by the
+LC_COLLATE locale. Unless the -t option is given, the sort comparison ignores
+blanks at the start of the join field, as in sort -b. If the --ignore-case
+option is given, the sort comparison ignores the case of characters in the join
+field, as in sort -f:
+
+$ sort -k 1bf,1 file1 > file1.sorted
+$ sort -k 1bf,1 file2 > file2.sorted
+$ join --ignore-case file1.sorted file2.sorted > file3
+
+The sort and join commands should use consistent locales and options if the
+output of sort is fed to join. You can use a command like ‘sort -k 1b,1’ to
+sort a file on its default join field, but if you select a non-default locale,
+join field, separator, or comparison options, then you should do so
+consistently between join and sort.
+
+To avoid any locale-related issues, it is recommended to use the ‘C’ locale for
+both commands:
+
+$ LC_ALL=C sort -k 1b,1 file1 > file1.sorted
+$ LC_ALL=C sort -k 1b,1 file2 > file2.sorted
+$ LC_ALL=C join file1.sorted file2.sorted > file3
+

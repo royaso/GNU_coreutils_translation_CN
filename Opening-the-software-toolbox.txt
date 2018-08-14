@@ -1,0 +1,17 @@
+Next: GNU Free Documentation License, Previous: Date input formats, Up: Top   [
+Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+30 Opening the Software Toolbox
+
+An earlier version of this chapter appeared in the What’s GNU? column of the
+June 1994 Linux Journal. It was written by Arnold Robbins.
+
+• Toolbox introduction:          Toolbox introduction
+• I/O redirection:               I/O redirection
+• The who command:               The who command
+• The cut command:               The cut command
+• The sort command:              The sort command
+• The uniq command:              The uniq command
+• Putting the tools together:    Putting the tools together

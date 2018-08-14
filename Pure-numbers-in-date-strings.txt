@@ -1,0 +1,22 @@
+Next: Seconds since the Epoch, Previous: Relative items in date strings, Up:
+Date input formats   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+29.8 Pure numbers in date strings
+
+The precise interpretation of a pure decimal number depends on the context in
+the date string.
+
+If the decimal number is of the form yyyymmdd and no other calendar date item
+(see Calendar date items) appears before it in the date string, then yyyy is
+read as the year, mm as the month number and dd as the day of the month, for
+the specified calendar date.
+
+If the decimal number is of the form hhmm and no other time of day item appears
+before it in the date string, then hh is read as the hour of the day and mm as
+the minute of the hour, for the specified time of day. mm can also be omitted.
+
+If both a calendar date and a time of day appear to the left of a number in the
+date string, but no relative item, then the number overrides the year.
+

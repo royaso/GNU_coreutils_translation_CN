@@ -1,0 +1,17 @@
+Next: Operating on sorted files, Previous: Output of parts of files, Up: Top  
+[Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+6 Summarizing files
+
+These commands generate just a few numbers representing entire contents of
+files.
+
+• wc invocation:         Print newline, word, and byte counts.
+• sum invocation:        Print checksum and block counts.
+• cksum invocation:      Print CRC checksum and byte counts.
+• b2sum invocation:      Print or check BLAKE2 digests.
+• md5sum invocation:     Print or check MD5 digests.
+• sha1sum invocation:    Print or check SHA-1 digests.
+• sha2 utilities:        Print or check SHA-2 digests.

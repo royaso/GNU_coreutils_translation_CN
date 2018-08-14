@@ -1,0 +1,8 @@
+Next: Delaying, Previous: Modified command invocation, Up: Top   [Contents][
+Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+24 Process control
+
+• kill invocation:    Sending a signal to processes.

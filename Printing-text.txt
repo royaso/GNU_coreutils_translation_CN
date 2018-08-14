@@ -1,0 +1,11 @@
+Next: Conditions, Previous: Disk usage, Up: Top   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+15 Printing text
+
+This section describes commands that display text strings.
+
+• echo invocation:      Print a line of text.
+• printf invocation:    Format and print data.
+• yes invocation:       Print a string until interrupted.

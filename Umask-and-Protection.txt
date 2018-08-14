@@ -1,0 +1,28 @@
+Previous: Multiple Changes, Up: Symbolic Modes   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+27.2.6 The Umask and Protection
+
+If the users part of a symbolic mode is omitted, it defaults to ‘a’ (affect all
+users), except that any permissions that are set in the system variable umask
+are not affected. The value of umask can be set using the umask command. Its
+default value varies from system to system.
+
+Omitting the users part of a symbolic mode is generally not useful with
+operations other than ‘+’. It is useful with ‘+’ because it allows you to use
+umask as an easily customizable protection against giving away more permission
+to files than you intended to.
+
+As an example, if umask has the value 2, which removes write permission for
+users who are not in the file’s group, then the mode:
+
++w
+
+adds permission to write to the file to its owner and to other users who are in
+the file’s group, but not to other users. In contrast, the mode:
+
+a+w
+
+ignores umask, and does give write permission for the file to all users.
+

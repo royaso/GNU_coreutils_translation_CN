@@ -1,0 +1,79 @@
+Next: Output, Previous: Control, Up: stty invocation   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+19.2.2 Input settings
+
+These settings control operations on data received from the terminal.
+
+‘ignbrk’
+   
+    Ignore break characters. May be negated.
+
+‘brkint’
+   
+    Make breaks cause an interrupt signal. May be negated.
+
+‘ignpar’
+   
+    Ignore characters with parity errors. May be negated.
+
+‘parmrk’
+   
+    Mark parity errors (with a 255-0-character sequence). May be negated.
+
+‘inpck’
+   
+    Enable input parity checking. May be negated.
+
+‘istrip’
+   
+    Clear high (8th) bit of input characters. May be negated.
+
+‘inlcr’
+   
+    Translate newline to carriage return. May be negated.
+
+‘igncr’
+   
+    Ignore carriage return. May be negated.
+
+‘icrnl’
+   
+    Translate carriage return to newline. May be negated.
+
+‘iutf8’
+   
+    Assume input characters are UTF-8 encoded. May be negated.
+
+‘ixon’
+   
+    Enable XON/XOFF flow control (that is, Ctrl-S/Ctrl-Q). May be negated.
+
+‘ixoff’
+‘tandem’
+   
+    Enable sending of stop character when the system input buffer is almost
+    full, and start character when it becomes almost empty again. May be
+    negated.
+
+‘iuclc’
+   
+    Translate uppercase characters to lowercase. Non-POSIX. May be negated.
+    Note ilcuc is not implemented, as one would not be able to issue almost any
+    (lowercase) Unix command, after invoking it.
+
+‘ixany’
+   
+    Allow any character to restart output (only the start character if
+    negated). Non-POSIX. May be negated.
+
+‘imaxbel’
+   
+    Enable beeping and not flushing input buffer if a character arrives when
+    the input buffer is full. Non-POSIX. May be negated.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Next: Output, Previous: Control, Up: stty invocation   [Contents][Index]
+

@@ -1,0 +1,25 @@
+Next: Charset selection in ptx, Up: ptx invocation   [Contents][Index]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+7.5.1 General options
+
+‘-G’
+‘--traditional’
+
+    As already explained, this option disables all GNU extensions to ptx and
+    switches to traditional mode.
+
+‘--help’
+
+    Print a short help on standard output, then exit without further
+    processing.
+
+‘--version’
+
+    Print the program version on standard output, then exit without further
+    processing.
+
+An exit status of zero indicates success, and a nonzero value indicates
+failure.
+
