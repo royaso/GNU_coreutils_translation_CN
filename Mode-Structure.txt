@@ -3,82 +3,154 @@ Next: Symbolic Modes, Up: File permissions   [Contents][Index]
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 27.1 Structure of File Mode Bits
+文件权限位
 
 The file mode bits have two parts: the file permission bits, which control
 ordinary access to the file, and special mode bits, which affect only some
 files.
+文件模式位有两部分: 文件权限位控制文件的访问权限, 还有特殊模式位: 只有一些文件会被影响
 
 There are three kinds of permissions that a user can have for a file:
+文件具有3个权限
 
  1. permission to read the file. For directories, this means permission to list
     the contents of the directory.
+    文件读取. 对于目录,就是可以查看目录内容,显示文件列表
  2. permission to write to (change) the file. For directories, this means
     permission to create and remove files in the directory.
+    文件写入. 对于目录,有写权限的话就可以在那个目录内新建或删除文件
  3. permission to execute the file (run it as a program). For directories, this
     means permission to access files in the directory.
+    文件执行就是文件当做软件来执行. 对于目录来说就是可以进入那个目录,把那个目录当成当前目录
 
 There are three categories of users who may have different permissions to
 perform any of the above operations on a file:
+能对文件操作的用户分为3种
 
  1. the file’s owner;
+ 	文件所有者
  2. other users who are in the file’s group;
+ 	有和文件所属组同样的组的用户
  3. everyone else.
+ 	除此以外的人
 
 Files are given an owner and group when they are created. Usually the owner is
 the current user and the group is the group of the directory the file is in,
 but this varies with the operating system, the file system the file is created
 on, and the way the file is created. You can change the owner and group of a
 file by using the chown and chgrp commands.
+文件建立的时候就有文件所有者和文件所属组.正常来说用户就是文件的所有者,文件所属组是文件所在目录的所属组,但操作系统,文件系统还有文件建立的方式都会对此有所影响.用`chown`和`chgrp`可以改变文件的所有者和所属组
 
 In addition to the three sets of three permissions listed above, the file mode
 bits have three special components, which affect only executable files
 (programs) and, on most systems, directories:
+除了上面3个文件权限,还有个模式位只对可执行文件还有目录有效
 
  1. Set the process’s effective user ID to that of the file upon execution
     (called the set-user-ID bit, or sometimes the setuid bit). For directories
     on a few systems, give files created in the directory the same owner as the
     directory, no matter who creates them, and set the set-user-ID bit of
     newly-created subdirectories.
+    把进程的有效用户ID设置成那个可执行文件的所有者.一些操作系统上,对于设置了setuid的目录,在里面建立的文件都拥有和那个目录一样的所有者,不管是谁建立的文件,新建的目录也具有setuid
  2. Set the process’s effective group ID to that of the file upon execution
     (called the set-group-ID bit, or sometimes the setgid bit). For directories
     on most systems, give files created in the directory the same group as the
     directory, no matter what group the user who creates them is in, and set
     the set-group-ID bit of newly-created subdirectories.
+    和上面类似,只不过编程所属组
  3. Prevent unprivileged users from removing or renaming a file in a directory
     unless they own the file or the directory; this is called the restricted
     deletion flag for the directory, and is commonly found on world-writable
     directories like /tmp.
+    没有权限的用户不能删除或重命名文件除非他是文件或该目录拥有者,这叫做目录限制标识符, 经常用在其他人也有写权限的目录上,比如/tmp [这样就能防止各个用户相互删除别人的文件了]
 
     For regular files on some older systems, save the program’s text image on
     the swap device so it will load more quickly when run; this is called the
     sticky bit.
+    一些比较老的操作系统上,设置了这个叫sticky bit的普通文件,它们会在运行的时候载入得更快
 
 In addition to the file mode bits listed above, there may be file attributes
 specific to the file system, e.g., access control lists (ACLs), whether a file
 is compressed, whether a file can be modified (immutability), and whether a
 file can be dumped. These are usually set using programs specific to the file
 system. For example:
-
+除此之外,还有些属性是各个文件系统特有的,比如访问控制列表ACL, 文件是否能被压缩,文件能否被修改, 文件能否被备份. 这些属性的设置就要用到专用的软件命令了,比如
 ext2
 
     On GNU and GNU/Linux the file attributes specific to the ext2 file system
     are set using chattr.
+    ext2文件系统是用chattr
 
 FFS
 
     On FreeBSD the file flags specific to the FFS file system are set using
     chflags.
+    在FreeBSD上是用chflags
 
 Even if a file’s mode bits allow an operation on that file, that operation may
 still fail, because:
+就算文件权限允许这样的操作,但结果也可能失败,因为
 
   • the file-system-specific attributes or flags do not permit it; or
+  文件系统专属属性不允许 [比如明明有w写权限,但设置了i属性就不能修改文件了]
   • the file system is mounted as read-only.
+  文件系统是一只读形式挂载的
 
 For example, if the immutable attribute is set on a file, it cannot be
 modified, regardless of the fact that you may have just run chmod a+w FILE.
-
+比如,如果在文件上设置了"不可修改"属性,它就不能被修改,不管你是否已经给了所有人写入权限`chmod a+w FILE`
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Next: Symbolic Modes, Up: File permissions   [Contents][Index]
 
+
+
+
+-------
+
+翻译得好蹩脚啊. 被束缚的感觉不舒服,不是我的风格,但这就是文档的风格啊
+想加上自己的注释又怕破坏了文档结构
+想自由发挥又背离了练习翻译的目的
+结果四不像???
+
+还有,既然看了文档,就要实践下,不然没印象,不就是空谈了?
+
+那就这样,
+插入文中的翻译尽量忠于原文
+文末这样的就自己自由发挥了,
+最后是实践
+
+
+
+--------
+
+实践
+正常来说用户就是文件的所有者,文件所属组是文件所在目录的所属组,
+看来是这样的,我换个用户试试
+这里看到在/tmp下建立的文件和目录的所属组变成了wheel,是不是/tmp这个目录的所属组呢
+而且/tmp目录好像权限位也挺特别的,就是上面文中有提到的它有sticky bit, 防止不同用户删除别人的文件,而只能删除自己的文件
+
+test> ls -ld /tmp             
+lrwxr-xr-x 1 root wheel 11 Apr  2  2017 /tmp -> private/tmp/
+~/test/b站up:求美女/GNU翻译/GNU_coreutils_translation_CN/test   master ● 
+test> ls -ld /private/tmp
+drwxrwxrwt 23 root wheel 782 Aug 14 22:26 /private/tmp/
+	 ⬆️	这个t就是sticky bit
+
+原来/tmp是个软链接
+在里面建立的都是属于wheel组,
+能读取别人的文件内容
+看情况是没有别人目录的写入权限
+不能删除tmp下别人的文件
+
+
+royaso对于roya目录是其他人,有r-x权限,就是说,有列出目录的权限和cd进目录的权限
+先关闭x,就不能cd进去了, 改回来就可以cd了
+
+虽然没x但有r,所以可以ls目录,也不能读取文件内容, 但想想,不通啊,既然目录有r读取权限文件也有读取权限,那怎么读取不了呢?
+
+奇怪,rw都有了就差x了, x权限那么重要? 那去掉w试试,
+结论是要读取文件需要有目录的x权限和r权限
+
+
+就先到这吧,还有个xargs bash -c 视频要更,今天我就是要破纪录:看看能肝多少个视频
